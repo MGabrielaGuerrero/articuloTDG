@@ -1,0 +1,231 @@
+\documentclass[12pt,twocolumn,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow} 
+
+
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\title{ESTIMACIÓN DEL TAMAÑO Y LA VELOCIDAD DE
+MICROBURBUJAS EN SISTEMAS DE FLOTACIÓN POR
+AIRE DISUELTO, UTILIZANDO MICROFOTOGRAFÍA}
+\author{Ordonez,Carlos;  Guerrero, Maria; España Elena;Florez, Juan 
+ \\ 
+\and{Universidad de Cauca, Popayán, Colombia.}\\
+}
+
+\begin{document}
+\maketitle
+\textbf{Resumen.}
+El incremento del sedentarismo en la población en los últimos años, ha significado un gran problema tanto social como de salud, es necesario el evaluar la condición física de las personas, para tomar las medidas necesarias para apaciguar este problema. La batería de test EUROFIT es una buena herramienta para cumplir este propósito, pero las condiciones de su realización es del todo manual, cayendo en la posibilidad de errores o prejuicios humanos en la toma de datos de los participantes. En este artículo se aborda esta cuestión al implementar un sistema de visión artificial, para el procesamiento de vídeos, obtenidos al realizar los test correspondientes a Flexión de tronco y abdominales de esta batería y por último el validar el método propuesto, como  fiable y utilizable para el propósito creado.
+
+\textit{Abstract.}  
+\textit{The increase in sedentary lifestyle in the population in recent years has meant a great social and health problem, it is necessary to assess the physical condition of people, to take the necessary measures to appease this problem. The EUROFIT test battery is a good tool to fulfill this purpose, but the conditions of its realization are entirely manual, falling into the possibility of errors or human prejudices in the data collection of the participants. This article addresses this issue when implementing an artificial vision system for video processing, obtained by performing the tests corresponding to Trunk and abdominal flexion of this battery and finally validating the proposed method, as reliable and usable for the purpose created.}
+
+\section{Introducción}
+
+Las microburbujas son utilizadas en procesos industriales, que hacen uso de flotación por aire disuelto (DAF) \cite{cheng2016bubble}, para la clarificación de aguas y eliminación de residuos. Dentro de estos procesos la caracterización de las burbujas juega un papel importante, tanto en el rendimiento \cite{gulden2018online} \cite{eskanlou2018interactional} \cite{reis2016study}, como en la eficiencia de la limpieza de aguas \cite{sadeghi2020experimental} \cite{fanaie2020effect}. El tamaño de las microburbujas puede verse afectado en el ascenso de las misma debido a la coalescencia con otras burbujas \cite{fanaie2020effect}, el diámetro de la burbuja afecta la capacidad para eliminar partículas \cite{sadeghi2020experimental}, las burbujas de mayor tamaño suben con una velocidad superior capturando partículas más grandes, mientras que las pequeñas tiene una velocidad de ascenso más baja y recolectan partículas de menor dimensión \cite{sadeghi2020experimental} \cite{brasileiro2020construction}, es por ello que es importante caracterizar las burbujas o microburbujas en cada proceso \cite{sadeghi2020experimental} \cite{ahmadi2014nano}.
+
+
+Idealmente, la caracterización de microburbujas debe presentar una mínima interferencia en el comportamiento dinámico de estas, ya sea en su tamaño o en su velocidad de ascenso \cite{gulden2018online}. El análisis de microburbujas debe poseer las características necesarias para lograr una operación en línea  bajo condiciones variables en su entorno de operación, las variables dinámicas de las burbujas requieren ser analizadas de forma precisa \cite{parmar2015terminal}, sin comprometer el proceso DAF a adaptaciones complejas y que pueda ser utilizado en distintas plantas que usen flotación por aire disuelto con aguas a tratar.
+
+Es fácil captar una burbuja ascendente y determinar sus características dinámicas, pero al  analizar cúmulos de microburbujas en diferentes condiciones del fluido a tratar, se hace necesario la adaptación de sensores y dispositivos para lograr esta tarea \cite{brasileiro2020construction}. Existen diferentes métodos para la caracterización de microburbujas, como: análisis de imagen \cite{swart2020situ}, microfotografía \cite{sadeghi2020experimental}, acústico \cite{guan2017bubble}, Velocimetria de partículas \cite{levitsky2021microbubbles}, difracción láser \cite{reis2016study}, desacople de gases \cite{parmar2015terminal}, aunque en su mayoría presentan buenos resultados en la caracterización \cite{gulden2018online} \cite{eskanlou2018interactional} \cite{aumelas2016micro}, gran parte de la implementación de estos métodos incurre en tecnologías o adaptaciones complejas y costosas, las cuales generalmente utilizan columnas, tubos o celdas paralelas al proceso \cite{reis2016study}  \cite{swart2020situ}  \cite{han2002development}, \cite{cheng2016bubble}, \cite{jeon2018bubble}, estas causan que las microburbujas sean más sensibles a los ajustes de los instrumentos \cite{jeon2018bubble}, lo que complica el buen análisis de las microburbujas.
+
+Los avances en teléfonos inteligentes, en especial la capacidad de grabar vídeo en cámara lenta, alta resolución de imagen, la diversidad de aditamentos para captura de imágenes, los hace atractivos para su uso en aplicaciones de microfotografía. En particular, porque es un dispositivo que necesita pocos recursos para esta tarea, presenta una flexibilidad en su uso dentro y fuera del laboratorio \cite{orth2018dual}. Es por ello que se propone el diseñar e implementación de un sistema de microfotografía que use un teléfono inteligente con buenas características de toma de imagenes para determinar el tamaño y velocidad de microburbujas, sin usar columna de flotación independiente, directamente   en el prototipo de la planta de DAF instalado en el laboratorio de hidráulica de la Universidad de Cauca.
+
+El artículo se compone de 5 secciones, en la sección l se encuentra la introducción, En la sección II se encuentra la metodología, en la sección III  se presentan los resultados,  en la sección IV  conclusiones.
+
+\section{Metodología}
+La metodología a seguir para la implementación de la propuesta, está dividido en 3 fases, primera fase correspondiente al diseño del sistema de microfotografía,  la segunda enfocada en el desarrollo del algoritmo basado en visión de máquina, finalmente se describe el proceso de toma de vídeos para su posterior procesamiento.
+
+\subsection{sistema de microfotografía }
+
+Debido a las características particulares presentes en la planta en la cual se pondrá a prueba el sistema de microfotografía, se escogieron los siguientes elementos que permiten cumplir la labor de caracterización de microburbujas de formas más cómoda y eficiente. Como soporte se creó una base de aluminio, la cual  se compone de dos ganchos los cuales se ajustan en la parte superior de un lateral del tanque DAF y la base donde se acomoda la cámara, este permite que la cámara se encuentre lo más cerca al tanque, logrando así una mejor captura de las microburbujas, la base cuenta con unas medidas de 4*17*1 cm de alto, ancho y profundidad respectivamente, y los ganchos o brazos tienen   30*1*0,2 cm de alto, ancho y profundidad, una distancia de doblez  de 3,5 cm,  en esta última medida se tuvo en cuenta el tamaño del lente y el de la propia base, ajustando de forma precisa el montaje de microfotografía evitando asi interferir en el ángulo de la cámara \cite{tripode}. 
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{soporte.png}
+	\caption{Soporte Para teléfono móvil} \textbf{Fuente:} Elaboración propia
+	\label{lente}
+\end{figure}
+
+Como sistema de iluminación, se emplea una sola fuente de  luz  ubicada en el lado opuesto de la  cámara generando con ello una sistema de luz de fondo, se eligió una Lámpara  de Panel Led  Cuadrado S/p Luz Dia marca Karluz,  referencia kl-2201, con un Voltaje de 110 V  y una potencia de 12 W \cite{lampara} 
+
+El mecanismo óptico a utilizar es un "Lente Gran Angular" para teléfono inteligente, con clip 2 en 1,  compatible con iPhone, Samsung, Google Pixel, tiene unas dimensiones de 11.5cm*10.3cm*5.9cm, minimiza el deslumbramiento de la lente, la reflexión, el fantasma y otros artefactos para una excelente claridad,  dentro de sus características cuenta con un distancia focal de aproximadamente 7 cm permitiendo así una captura óptima de la imagen, Lente macro de 12,5 x,  lente de rosca de 1.457 pulgadas de diámetro, tomar fotos a una distancia de 1.18 a 1.57 pulgadas, tomar fotos a una distancia de 1.18 a 1.57 pulgadas \cite{lente}, este estará ubicado sobre el lente de la cámara.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.05]{lente.jpg}
+	\caption{Lente para teléfono inteligente} \textbf{Tomado:} \cite{lente}
+	\label{lente}
+\end{figure}
+
+La cámara a utilizar es de un teléfono inteligente Huawei P30 pro, con 4 cámaras un lente SuperZoom, y un  lente ultra gran angular de 20 MP, la cámara es Super Sensing de 40 MP con un Zoom de 50x, la cámara posterior, es compatible con el enfoque automático (enfoque láser, enfoque de fase, enfoque de contraste), es compatible con AIS (Estabilización de imagen con IA de HUAWEI), cabe resaltar que en diferentes modos de fotografía, el número de píxeles puede ser ligeramente diferente \cite{Hawei}, dentro de los detalles más relevantes de la cámara tenemos:
+
+
+\begin{itemize}
+\item CÁMARA POSTERIOR: Cámara cuádruple Leica: 40 MP (Objetivo gran angular, apertura de f/1.6, OIS) + 20MPX (Objetivo ultra gran angular, apertura de f/2.2) + 8 MP (Teleobjetivo, apertura de f/3.4, OIS) La cámara de tiempo de vuelo (Time-of-Flight, TOF).
+\item CÁMARA FRONTAL: 32 MP, apertura de f/2.0.
+\item CAPTURA DE VÍDEO: en cámara lenta de hasta 960 fps (velocidadX32).
+\end{itemize}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.45]{Distribucion.png}
+	\caption{Distribución de los componentes de microfotografía en el sistema DAF} \textbf{Fuente:} Elaboración propia
+	\label{disDAF}
+\end{figure}
+
+Estos elementos se acoplan al sistema DAF,como se muestra en la figura \ref{disDAF}
+
+\subsection{Software}
+El algoritmo se realizo en C\#, en la plataforma unity, con ayuda de la librería de uso libre OpenCV versión 1.7.1.
+
+Esta sección estará dividida en 5 secciones, la primera enfocada en la preparación del vídeo, pre-procesamiento;  la segunda, es  el procesamiento inicial que se le aplicará al vídeo obtenido anteriormente con le fin de eliminar el mayor ruido posible, la siguiente en donde se explica el proceso de detección de las microburbujas en frames de vídeo, la cuarta  en donde se describe el proceso utilizado para realizar el seguimiento de las MB detectadas, en la última parte se encuentra el proceso de caracterización.
+
+
+
+\subsubsection{Pre-procesamiento de vídeo}
+
+Una vez tomados los vídeos, al ser insertado en Unity, este se encuentra en un formato llamado texture que vendría a ser como 3D, por ello primero se hace un paso a 2D, posteriormente se pasa esta información al formato Mat que es el requerido como entrada para las funciones de openCVSharp, finalmente aplicar la función Undistor, aplicando con ello la calibración de cámara.  
+
+\subsubsection{Eliminación de ruido}
+
+Para realizar la caracterizacion primeramente se realizar unos ajuste a la imagen, a través de la utilización de filtros, Como entrada el algoritmo recibe el frame a procesar, posteriormente se aplica una conversión  a escala de grises, después se aplica un filtro de mediana para eliminación de ruido, a continuación se aplicó el filtro de  gauss, para difuminar los elementos irrelevantes y el ruido, posteriormente se aplicó dos veces la función de relleno desde el punto (0,0) primero con un valor de 255, y después con 0, a continuación se aplicó la operación dilatación, posteriormente se utilizó la operación erosión, seguido de la aplicacion de binarizacion con el humbral  110,  para terminar se  utilizó el filtro de canny para determinar el contorno de las MB, en el valor de 0, utilizando una apertura de 3.
+
+
+\subsubsection{Detección de microburbujas}
+
+Para realizar la identificación de MB, se utilizó la transformada de Hough, con un valor de acumulador en 0.5, con una distancia mínima entre los centros de 5, el primer parametro del metodo en 11 y el segundo en 14, un valor mínimo de radio en 0 y máximo en 20, esta función retorna un arreglo, de lo que en C\# se denomina CircleSegment, que contiene la información de radio, posición en X y posición en Y, además en este algoritmo se hace uso de dos lista de arreglos de enteros, una para guardar la información de todas las burbujas detectadas en el frame y el otro se usa para guardar la información de las burbujas que llegan desde abajo, es decir las burbujas que tienen un valor en la posición en Y mayor o igual a 670, eso se realiza para garantizar que la  caracterización se haga sobre las burbujas que realizan la trayectoria completa. 
+
+
+\subsubsection{Calculo de trayectorias}
+
+Para iniciar con el algoritmo de seguimiento, el cual se encarga de identificar una misma burbuja a lo largo de la trayectoria, hay que tener presente que el ascenso de las burbujas no es lineal, por lo que para el cálculo de distancia se usa la forma euclidiana, además se hace necesario declarar un listado auxiliar en donde se almacenarán las burbujas ya ordenadas de acuerdo a su par anterior; del proceso anterior se retornan dos listas que contienen el radio, la coordenada en X y la coordenada en Y, de las burbujas que llegan desde abajo y las burbujas totales en el frame,  para iniciar el proceso se hace un recorrido de cada uno de los elementos guardados en la lista de burbujas que llegan desde abajo, y a este se le aplica la función de distancias mínimas, la cúal consiste en declarar un lista de coordenadas de distancias inicialmente vacía, se toma cada el valor de la Mb que viene desde abajo y por cada burbuja detectada se calcula la distancia, es decir, se tiene el  punto X1, y X2 para calcular la distancia en X, además de Y1 y Y2 para calcular la distancia en Y, con los dos valores se aplica la raíz cuadra de la suma de los cuadrados,  obteniendo así la distancia para cada burbuja y se almacena en un la lista de distancias, como lo que nos interesa es las coordenadas de la burbuja para futuros procesos y sabemos que la posición de las coordenadas corresponde al de la distancia, pero el valor de interés es el más pequeño, entonces se creó una lista copia de las distancias, a la cual se le realizó un ordenamiento y con ello obtenemos que en la posición 0 esta la distancia más pequeña, ya con el valor de distancia mínima determinada, lo que hacemos es buscar la posición de esta distancia en la lista original, con la ubicación encontrada, se procede a guardar las coordenadas de la burbuja en la lista Mb ordenadas.
+
+
+\subsubsection{Calculo de diámetro y velocidad }
+
+Este algoritmo recibe las burbujas ordenadas que serían las actuales, y por cada burbuja calcula la velocidad, pero para calcular la velocidad es necesario tener la distancia recorrida, se puede obtener a través de la fórmula euclidiana, para ello se hace uso de una variable auxiliar que permite recorrer la lista de coordenadas anteriores, de forma paralela al recorrido de las actuales, con ello se tiene el  punto X1, y X2 para calcular la distancia en X, además de Y1 y Y2 para calcular la distancia en Y, con los dos valores se aplica la raíz cuadra de la suma de los cuadrados obteniendo así la distancia para cada burbuja, ahora falta dividir por el tiempo, que corresponde al tiempo del video y multiplicar por el valor de conversión de pixeles a mm, para este caso, se calculo como: 0.6/272.544 mm/Px, dejando la velocidad en mm/seg
+
+
+
+\subsection{Adquisición de datos}
+
+El propósito del proyecto es realizar el análisis de mb, a través de microfotografía, es por ello que se acopla el lente zoom, a la cámara del teléfono celular, este se ajusta al soporte para mantenerlo estático y minimizar el ruido.
+
+para realizar la grabación de las microburbujas, se requiere establecer una conexión inalámbrica entre el teléfono celular y computador, evitando así que el factor humano interfiera  con movimientos de la cámara, desconfiguraciones, entre otras; después de realizar con éxito la conexión,  se selecciona el modo de captura en “cámara lenta” y se desactiva el reconocimiento de movimiento, se debe configurar el modo de foco en manual, con el propósito de que el autoenfoque no vaya cambiando entre las cámaras del teléfono, también se configura el zoom a x2, los parámetros ISO, la apertura y la obturación según como se presenten las condiciones del entorno, esto refiere al posicionamiento del acople, ubicación de la lámpara y estado del tanque, manteniendo así un estándar para realizar los procedimientos.
+
+El control de iluminación, se hace esencialmente cerrando de las cortinas del laboratorio evitando así el ingreso de luz exterior, también se apagan las lámparas, dejando únicamente encendida la lámpara que está asociada al tanque DAF. Para posicionar la cámara, 
+se utiliza el acople mencionado en la sección de diseño de hardware, soporte para teléfono móvil, el cual se ubica al ras del tanque.
+
+
+
+\section{Resultados}
+
+\section{INTERFAZ}
+
+Después de recolectar información sobre los distintos dispositivos, se filtró las personas que en sus dispositivos la aplicación funciona debidamente, se proporcionó 3 videos extra a  las personas procurando que el medio donde fueron compartidos no disminuya la calidad del material; para las personas a las cuales se les presentaban dificultades al operar la aplicación, se les permitió interactuar con la versión de escritorio y con teléfonos proporcionados por nosotros; después de  15 minutos, se les procedió a aplicar una encuesta, que contiene preguntas  que manejan tres metodologías, escala de likert, preguntas dicotómicas y preguntas abiertas; de lo que podemos resaltar:
+
+\subsection{Usabilidad}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{Encuesta1.png}
+	\caption{Pregunta sobre facilidad de uso} \textbf{Fuente:} Elaboración propia 
+	\label{Encuesta1}
+\end{figure}
+
+Como se muestra en la figura \ref{Encuesta1} se preguntó sobre la facilidad de uso de la aplicación, de lo cual el 95.8\% de los encuestados respondieron que era fácil de usar y un 5.2\% respondieron que no, pero al tener un porcentaje superior del 80\% lo cual fue tomado como válido.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta2.png}
+	\caption{Pregunta sobre facilidad de navegación} \textbf{Referencia: Elaboracion propia} 
+	\label{Encuesta2}
+\end{figure}
+
+Al tener varias ventanas con distinta información, es importante saber si a la persona le es fácil llegar a la información, por lo que se usó una escala de 1 -5 como se muestra en la figura \ref{Encuesta2}  donde 1 es difícil y 5 es fácil, el 66.7\% le asignó un valor de 5, el 29.2\% un valor de 4 y el 4.2\% un valor de 3, al sumar el valor de las personas encuestadas que asignaron un valor de 5 - 4, tenemos un 95.8\% que nos permite darlo por válido. 
+
+
+Enfocamos una pregunta en la comodidad de la persona al utilizar la aplicación como se muestra en la figura \ref{Encuesta3},  en escala de likert lineal, donde 1 se considera malo y 5 se considera excelente, el 41.7\% de las personas respondieron que fue “excelente”, el 54.2\% respondieron “buena” y el 4.2\% respondió “regular”,  para la validación de esta pregunta el 80\% o más de las personas deben estar ubicadas en las escalas 4-5, de lo cual se obtuvo el 95.8\%.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta3.png}
+	\caption{Pregunta sobre la experiencia usando la app} \textbf{Fuente:} Elaboración propia 
+	\label{Encuesta3}
+\end{figure}
+
+\subsection{Interfaz}
+
+Se formuló también una pregunta, enfocada en que tan visible es la información en tema de colores como se muestra en la figura \ref{Encuesta4} , utilizando un rango de 1 a 5, donde 1 es mala y 5 es buena, el 41.7\% le asignaron un 5, el 54.8\% un 4 y el 12.5\% un 3, para la validación se tenia que más del 80\% se encuentren entre 4 -5 y se obtuvo un 87.5\%.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta4.png}
+	\caption{Pregunta sobre colores e información} \textbf{Fuente:} Elaboración propia 
+	\label{Encuesta4}
+\end{figure}
+
+Al ser una aplicación, en la cual se busca adaptación hacia los distintos dispositivos, se enfoco una pregunta a este tema como se muestra en la figura \ref{Encuesta5}, utilizando un escala de 1 - 5 donde 1 es malo y 5 bueno, el 41.7\% asignaron un valor de 5, el 45.8\% un valor de 4 y el 12.5\% de 3, para validar esta pregunta se establece  un valor de 80\% o más entre 4-5, el total fue de 87.5\%.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta5.png}
+	\caption{Pregunta proporción de información} \textbf{Fuente:} Elaboración propia 
+	\label{Encuesta5}
+\end{figure}
+
+\subsection{Sección}
+
+Debido a que se tiene tres secciones principales en la aplicación y estas contienen información valiosa surgen preguntas enfocadas en las mismas, es de resaltar que la sección “General”, es  donde se reproduce el vídeo, “Diámetro”, en el que se muestra el histograma correspondiente al diámetro, “Velocidad”, en la cual se muestra el histograma de velocidad. Para validar se tiene que más del 80\%  es decir 20 personas, hayan opinado entre las opciones muy fácil y fácil o excelente y buena.
+
+Se planteó una pregunta en relación a la accesibilidad como en la figura \ref{Encuesta6} a través de los botones a cada venta, puesto a que no se puede evaluar información a la cual no se pudo acceder, en donde para la sección de “General”, 10 personas lo calificaron como excelente, 13 personas como buena, y 1 personas como regular, para validación se obtuvo 23 personas; para la sección de “Diámetro”, 11 lo calificaron como excelente, 11, como  buena, y 2 como regular, teniendo un valor final de 22 personas que lo validaron; para la sección de “Velocidad”, 10 votaron por excelente, 13 por  buena y 1 personas como regular, teniendo como valor final 23 personas para validación.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta6.png}
+	\caption{Pregunta indicaciones de ingreso a ventanas} \textbf{Fuente:} Elaboración propia
+	\label{Encuesta6}
+\end{figure}
+
+Se planteó una pregunta en relación a los textos como en la figura \ref{Encuesta7}, ya que a través de estos se informa sobre el estado del video, así mismo sobre los valores mínimo, máximo y promedio de Diámetro y velocidad, en donde para la sección de “General”, 11 personas lo calificaron como muy Fácil, 10 personas como fácil, y 3 personas como regular, para validación se obtuvo 21 personas; para la sección de “Diámetro”, 9 lo calificaron como muy fácil, 12, como fácil, y 3 como regular, teniendo un valor final de 21 personas que lo validaron; para la sección de “Velocidad”, 9 votaron por muy fácil, 13 por fácil, y 2 por regular, teniendo como valor final 22 personas para validación. 
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta7.png}
+	\caption{Pregunta sobre dificultad de lectura de textos} \textbf{Fuente:} Elaboración propia
+	\label{Encuesta7}
+\end{figure} 
+
+Se planteó una pregunta en relación a la relación u organización entre texto, gráficas y botones como en la figura \ref{Encuesta8}, para verificar que toda la información de relevancia se esté mostrando de forma correcta, en donde para la sección de “General”, 12 personas lo calificaron como excelente, 10 personas como buena, y 2 personas como regular, para validación se obtuvo 22 personas; para la sección de “Diámetro”, 10 lo calificaron como excelente, 13 como  buena, y 1 como regular, teniendo un valor final de 23 personas que lo validaron; para la sección de “Velocidad”, 9 votaron por excelente, 15 por  buena, teniendo como valor final 24 personas para validación. 
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.3]{Encuesta8.png}
+	\caption{Pregunta de opinión sobre la organizacion de la información } \textbf{Fuente:} Elaboración propia
+	\label{Encuesta8}
+\end{figure}
+
+Para el caso de la pregunta abierta, fue tipo sugerencias, mejoras o quejas que se tuviera sobre la aplicación, en donde se resaltó, que los colores de la aplicación está bien, pero tratar de hacer más llamativa la aplicación.
+
+\section{Conclusiones y Trabajos Futuros}
+Se determina que la visión artificial, puede ser utilizada como un método efectivo para establecer los valores de las respectivas pruebas, sometidas en esta investigación, arrojando valores favorables para su implementación.
+
+Los materiales y métodos utilizados permiten que esta investigación sea fácil de aplicar, de bajo costo  y repetible.
+
+Se logró verificar que el método basado en visión de máquina, para la toma de datos al realizar la batería de pruebas EUROFIT, es fiable en la toma de datos de los participantes, teniendo un porcentaje de confiabilidad de 95\%, dando lugar a la posibilidad de implementar este tipo de tecnología en los procesos de medir la capacidad física.  
+ .
+
+\bibliographystyle{IEEEtran}
+\bibliography{Ref}
+\end{document}
