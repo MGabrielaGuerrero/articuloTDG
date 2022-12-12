@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2022.2.28)  12 DEC 2022 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2022.7.23)  12 DEC 2022 15:41
 entering extended mode
 **./articulo.tex
 (articulo.tex
 LaTeX2e <2018-12-01>
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
 File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -19,36 +19,30 @@ File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
-y"
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
 \ex@=\dimen103
 ))
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
-"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
@@ -89,53 +83,44 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
-ics.cfg"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
-x.def"
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty"
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@tempdima=\dimen114
 \captionmargin=\dimen115
@@ -150,14 +135,12 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count100
 \c@continuedfloat=\count101
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/caption\subcaption.sty"
 Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
 \c@subfigure=\count102
 \c@subtable=\count103
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/booktabs\booktabs.sty"
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen122
 \lightrulewidth=\dimen123
@@ -177,29 +160,24 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count107
 \@thisrulewidth=\dimen134
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip46
 \multirow@cntb=\count108
 \multirow@dima=\skip47
 \bigstrutjot=\dimen135
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
-ty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
-sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count109
@@ -215,8 +193,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen143
 \Gm@dimlist=\toks22
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
-cfg")) (articulo.aux
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) (articulo.aux
 
 LaTeX Warning: Label `lente' multiply defined.
 
@@ -235,9 +212,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
-
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-p
-df.mkii"
+ ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
 \scratchdimen=\dimen144
@@ -250,46 +225,35 @@ df.mkii"
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
 \everyMPtoPDFconversion=\toks24
-)
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
-base.sty"
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
-rr.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
-y"
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
-ekeys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )))
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
-.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
-ys.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
-s.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
-x.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 ))))
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexc
-mds.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -342,13 +306,14 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 25.
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 25.
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{C:/Users/GABRI/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/Users/lelou/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
@@ -371,8 +336,7 @@ File: lente.jpg Graphic file (type jpg)
 Package pdftex.def Info: lente.jpg  used on input line 65.
 (pdftex.def)             Requested size: 72.77614pt x 71.97308pt.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 74.
-
-("C:\Users\GABRI\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
@@ -408,120 +372,122 @@ Underfull \hbox (badness 1005) in paragraph at lines 125--126
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 136--137
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 141--162
+[][] 
+ []
+
+
+Underfull \vbox (badness 2460) has occurred while \output is active []
+
+ [5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 172--173
 \OT1/cmr/m/n/12 que en sus dis-pos-i-tivos la apli-cacion fun-
  []
 
-<Encuesta1.png, id=25, 1204.5pt x 506.6428pt>
+<Encuesta1.png, id=28, 1204.5pt x 506.6428pt>
 File: Encuesta1.png Graphic file (type png)
 <use Encuesta1.png>
-Package pdftex.def Info: Encuesta1.png  used on input line 142.
-(pdftex.def)             Requested size: 602.24854pt x 253.32079pt.
+Package pdftex.def Info: Encuesta1.png  used on input line 177.
+(pdftex.def)             Requested size: 481.79147pt x 202.65353pt.
 
-Overfull \hbox (365.4001pt too wide) in paragraph at lines 142--143
- [][] 
+Overfull \hbox (244.94304pt too wide) in paragraph at lines 177--178
+[][] 
  []
 
-<Encuesta2.png, id=26, 1204.5pt x 572.89032pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+<Encuesta2.png, id=33, 1204.5pt x 572.89032pt>
 File: Encuesta2.png Graphic file (type png)
 <use Encuesta2.png>
-Package pdftex.def Info: Encuesta2.png  used on input line 151.
-(pdftex.def)             Requested size: 361.35278pt x 171.86841pt.
+Package pdftex.def Info: Encuesta2.png  used on input line 186.
+(pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 151--152
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 186--187
  [][] 
  []
 
-[5 <./Encuesta1.png>]
-<Encuesta3.png, id=30, 1204.5pt x 572.89032pt>
+<Encuesta3.png, id=34, 1204.5pt x 572.89032pt>
 File: Encuesta3.png Graphic file (type png)
 <use Encuesta3.png>
-Package pdftex.def Info: Encuesta3.png  used on input line 163.
-(pdftex.def)             Requested size: 361.35278pt x 171.86841pt.
+Package pdftex.def Info: Encuesta3.png  used on input line 198.
+(pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 163--164
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 198--199
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-<Encuesta4.png, id=31, 1204.5pt x 572.89032pt>
+<Encuesta4.png, id=35, 1204.5pt x 572.89032pt>
 File: Encuesta4.png Graphic file (type png)
 <use Encuesta4.png>
-Package pdftex.def Info: Encuesta4.png  used on input line 174.
-(pdftex.def)             Requested size: 361.35278pt x 171.86841pt.
+Package pdftex.def Info: Encuesta4.png  used on input line 209.
+(pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 174--175
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 209--210
  [][] 
  []
 
-<Encuesta5.png, id=32, 1204.5pt x 572.89032pt>
+[7 <./Encuesta1.png> <./Encuesta2.png> <./Encuesta3.png> <./Encuesta4.png>]
+<Encuesta5.png, id=40, 1204.5pt x 572.89032pt>
 File: Encuesta5.png Graphic file (type png)
 <use Encuesta5.png>
-Package pdftex.def Info: Encuesta5.png  used on input line 183.
-(pdftex.def)             Requested size: 361.35278pt x 171.86841pt.
+Package pdftex.def Info: Encuesta5.png  used on input line 218.
+(pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 183--184
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 218--219
  [][] 
  []
 
-
-Underfull \vbox (badness 1024) has occurred while \output is active []
-
- [6 <./Encuesta2.png> <./Encuesta3.png> <./Encuesta4.png> <./Encuesta5.png>]
-<Encuesta6.png, id=36, 1204.5pt x 589.4522pt>
+<Encuesta6.png, id=41, 1204.5pt x 589.4522pt>
 File: Encuesta6.png Graphic file (type png)
 <use Encuesta6.png>
-Package pdftex.def Info: Encuesta6.png  used on input line 196.
-(pdftex.def)             Requested size: 361.35278pt x 176.83702pt.
+Package pdftex.def Info: Encuesta6.png  used on input line 231.
+(pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 196--197
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 231--232
  [][] 
  []
 
-
-Underfull \vbox (badness 1158) has occurred while \output is active []
-
-<Encuesta7.png, id=37, 1204.5pt x 589.4522pt>
+<Encuesta7.png, id=42, 1204.5pt x 589.4522pt>
 File: Encuesta7.png Graphic file (type png)
 <use Encuesta7.png>
-Package pdftex.def Info: Encuesta7.png  used on input line 205.
-(pdftex.def)             Requested size: 361.35278pt x 176.83702pt.
+Package pdftex.def Info: Encuesta7.png  used on input line 240.
+(pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 205--206
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 240--241
  [][] 
  []
 
-<Encuesta8.png, id=38, 1204.5pt x 628.59843pt>
+<Encuesta8.png, id=43, 1204.5pt x 628.59843pt>
 File: Encuesta8.png Graphic file (type png)
 <use Encuesta8.png>
-Package pdftex.def Info: Encuesta8.png  used on input line 214.
-(pdftex.def)             Requested size: 361.35278pt x 188.58098pt.
+Package pdftex.def Info: Encuesta8.png  used on input line 249.
+(pdftex.def)             Requested size: 240.89574pt x 125.71745pt.
 
-Overfull \hbox (124.50435pt too wide) in paragraph at lines 214--215
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./Encuesta6.png> <./Encuesta7.png>]
-Underfull \hbox (badness 1895) in paragraph at lines 224--225
-\OT1/cmr/m/n/12 miten que esta in-ves-ti-gacion sea facil de
+[8 <./Encuesta5.png> <./Encuesta6.png> <./Encuesta7.png>]
+Underfull \hbox (badness 1057) in paragraph at lines 258--259
+\OT1/cmr/m/n/12 un \Lente Gran An-gu-lar" que re-al-iza
  []
 
-(articulo.bbl
+[9 <./Encuesta8.png>] (articulo.bbl
 Underfull \hbox (badness 1888) in paragraph at lines 25--28
 \OT1/cmr/m/n/12 flota-tion col-umn,'' \OT1/cmr/m/it/12 In-ter-na-tional Jour-
  []
 
-[8 <./Encuesta8.png>]
+
 Underfull \hbox (badness 1194) in paragraph at lines 86--89
 \OT1/cmr/m/it/12 ra-tion and Pu-rifi-ca-tion Tech-nol-ogy\OT1/cmr/m/n/12 , p.
  []
 
-
+[10]
 Underfull \hbox (badness 1400) in paragraph at lines 111--115
 []\OT1/cmr/m/n/12 B. In-vero, ``In-vero alu-minium
  []
@@ -566,28 +532,45 @@ Overfull \hbox (30.65712pt too wide) in paragraph at lines 132--135
 \OT1/cmr/m/n/12 https://consumer.huawei.com/mx/phones/p30-
  []
 
-) [9] (articulo.aux)
+)
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 269--291
+[][] 
+ []
+
+
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 296--317
+[][] 
+ []
+
+
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 322--342
+[][] 
+ []
+
+[11
+
+] [12] [13] (articulo.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4432 strings out of 492895
- 69639 string characters out of 3123735
- 140720 words of memory out of 3000000
- 8281 multiletter control sequences out of 15000+200000
- 8660 words of font info for 33 fonts, out of 3000000 for 9000
+ 4462 strings out of 492895
+ 68054 string characters out of 3133479
+ 159755 words of memory out of 3000000
+ 8304 multiletter control sequences out of 15000+200000
+ 12750 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,39p,1898b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/GABRI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb><C:/Users/GABRI/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb><C:/Users/GABRI/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/GABRI/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/GABRI/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on articulo.pdf (9 pages, 835441 bytes).
+ 41i,9n,39p,1898b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmti12.pfb>
+Output written on articulo.pdf (13 pages, 858524 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

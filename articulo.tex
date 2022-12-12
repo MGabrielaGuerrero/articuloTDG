@@ -131,6 +131,42 @@ se utiliza el acople mencionado en la sección de diseño de hardware, soporte p
 
 \section{Resultados}
 
+En la realización de este proyecto se planteo la toma de videos a cámara lenta de la planta en funcionamiento a distintas presiones, las presiones que se escogieron fueron 34 y 36 psi, todo estos considerando el entorno y las limitaciones de la planta DAF del laboratorio de hidráulica de la Universidad del Cauca, se capturaran entre 10 a 27 videos con una duración de 10 segundos (tiempo es delimitado por el software de captura) por presión en cada prueba, realizando un total de 2 lotes de videos.
+
+Ambas pruebas se realizaron bajo las siguientes condiciones: caudal de recirculación 1000 L/h y una inyección de aire de 0.1 L/m, la iluminación se mantuvo constante durante el proceso de realización del material multimedia, con la diferencia que cada lote hace uso de un distinto tubo Venturi, ya que al ser una impresión 3D la cavitación desgasta el material haciendo que algunas burbujas salgan con un tamaño relativamente más grande y también se debe tener en cuenta que cada tubo tendrá un comportamiento distinto al generar microburbujas ya que la impresión no son exacatamente iguales una de otras. 
+
+En el primer lote se tomaron 18 videos con una presión de 34 psi y 22 videos con 36 psi, para un total de 40 videos, del total se seleccionaron 27 videos que cumplían las condiciones para ser procesados adecuadamente, estas condiciones radican en que el video presenten como minimo 10 microburbujas en el plano focal de la cámara. Los resultados obtenidos con las condiciones antes mencionadas y a una presión de 34  en cuanto a velocidad se presentan en la tabla \ref{R1}.
+
+\begin{table*}[t]
+	\begin{tabular}{| c | c | c | c | c | c | c | c |}
+	\hline
+	
+		\multicolumn{8}{ |c| }{\textbf{Primer lote 34 psi}} \\ \hline
+	 	\multirow{2}{*}{\textbf{Video}} & \multirow{2}{*}{\textbf{Burbujas}} & \multicolumn{3}{ |c| }{\textbf{Diametro ($\mu$m)}} & \multicolumn{3}{ |c| }{\textbf{Velocidad (mm/s)}} \\
+ 		&  & \textbf{Minimo} & \textbf{Maximo} & \textbf{Promedio} &\textbf{Minima} & \textbf{Maxima} & \textbf{Promedio}\\ \hline
+ 	1 & 17 & 52,8355 & 92,4621 & 72,24 & 2,0966 & 11,5869 & 2,65 \\
+ 	2 & 11 & 35,2236 & 88,0591 & 68,27 & 2,0966 & 5,3202 & 2,59 \\
+ 	3 & 19 & 22,0147 & 83,6562 & 49,23 & 2,0966 & 11,5869 & 2,65  \\
+ 	4 & 12 & 22,0147 & 105,6710 & 62,97 & 2,0966 & 7,8789 & 2,27  \\
+ 	5 & 14 & 22,0147 & 88,0591 & 47,12 & 2,0966 & 3,7016 & 2,17 \\
+ 	6 & 16 & 30,8207 & 118,8798 & 64,9 & 2,0966 & 11,0534 & 3,89 \\
+ 	7 & 16 & 26,4177 & 149,7005 & 104,63 & 2,0966 & 11,7166 & 2,32  \\
+ 	8 & 16 & 26,4177 & 70,4473 & 47,88 & 2,0966 & 2,0966 & 2,1 \\
+ 	9 & 16 & 26,4177 & 96,8650 & 62,52 & 2,0966 & 15,6273 & 7,71 \\
+ 	10 & 22 & 44,0295  & 118,8798 & 75,99 & 2,0966  & 5,8311 & 2,47 \\
+ 	11 & 10 & 22,0147  & 149,7005 & 52 & 2,0966  & 17,1599 & 3,55 \\
+ 	12 & 16 & 22,0147  & 134,7305 & 41,94 & 2,0966  & 14,8250 & 8,97 \\
+ 	13 & 13 & 22,0147 & 145,2976 & 61,31 & 2,0966 & 10,7277 & 3,6 \\
+ 	\bottomrule
+	\end{tabular}
+	\caption{Resultados primer lote 34 psi}
+\label{R1}
+\end{table*}
+
+En el segundo lote, al igual que el primero se conservaron las condiciones previamente establecidas, con la única variante que para este lote se usó un distinto tubo Venturi, debido al desgaste antes mencionado, se tomaron 25 videos a 34 psi y para 36 psi 26 para un total de 41. De este lote se seleccionaron 24 videos que cumplían las condiciones antes expuestas, Los datos correspondientes a los resultados a una presión de 36psi del primer lote y los del segundo lote se encuentran en la sección de Anexos en las tablas \ref{R2}, \ref{R3} y \ref{R4} .
+En base a los datos presentados en las tablas existió una distribución variada de tamaños de microburbujas, se puede apreciar rangos desde  22um hasta 215um aproximadamente, esto debido al desgaste mencionado del tubo Venturi a lo largo de su uso, pero esta situación dio oportunidades de presenciar distintos tamaños de burbujas para probar el alcance del algoritmo, el cual cumple satisfactoriamente la detección de burbujas dentro de los rangos estipulados en los objetivos e incluso tamaños mucho menores. De la prueba también se observó que el promedio general en cuanto a tamaño de los videos a 34psi del primer lote fue de 62,384$\mu$m y de 36 psi del mismo lote fue 76,24$\mu$m, por otro lado, en el segundo lote los promedios fueron de 80,6741667$\mu$m y 89,0792308$\mu$m para 36 y 34 psi respectivamente, esta distinción en cuanto al tamaño promedio en cada lote se atribuye al cambio de tubos Venturi, puesto que al ser una impresión 3D, cada tubo presenta comportamientos distintos al generar microburbujas.
+En cuanto a la velocidad siempre se mantuvo un valor mínimo estable de 2,0966 mm/s, esto puesto a que la velocidad es influencia por el tamaño y que el algoritmo tiene un rango mínimo de detección por tamaño, las velocidades de estas pequeñas burbujas se mantenían prácticamente similares. Se presentó un rango de velocidad de 2,0966mm/s hasta 21,8404 mm/s, en el calculo de esta variable se presentaron algunos casos como que algunas burbujas presentaban una alta velocidad debido a que estas se estaban desplazando linealmente hacia arriba y también que algunas presentaban mayor tamaño, como la literatura define que burbujas de mayor tamaño tienen mayores velocidades, otro caso es el que algunas se desplazan hacia el fondo, lo cual da un efecto de velocidad mas reducida, en general las velocidades obtenidas entran dentro de los rangos estipulados en los objetivos e incluso el algoritmo es capaz de estimar velocidades mayores.
+
 \section{INTERFAZ}
 
 Después de recolectar información sobre los distintos dispositivos, se filtró las personas que en sus dispositivos la aplicación funciona debidamente, se proporcionó 3 videos extra a  las personas procurando que el medio donde fueron compartidos no disminuya la calidad del material; para las personas a las cuales se les presentaban dificultades al operar la aplicación, se les permitió interactuar con la versión de escritorio y con teléfonos proporcionados por nosotros; después de  15 minutos, se les procedió a aplicar una encuesta, que contiene preguntas  que manejan tres metodologías, escala de likert, preguntas dicotómicas y preguntas abiertas; de lo que podemos resaltar:
@@ -138,8 +174,7 @@ Después de recolectar información sobre los distintos dispositivos, se filtró
 \subsection{Usabilidad}
 
 \begin{figure}
-	\centering
-	\includegraphics[scale=0.5]{Encuesta1.png}
+	\includegraphics[scale=0.4]{Encuesta1.png}
 	\caption{Pregunta sobre facilidad de uso} \textbf{Fuente:} Elaboración propia 
 	\label{Encuesta1}
 \end{figure}
@@ -148,7 +183,7 @@ Como se muestra en la figura \ref{Encuesta1} se preguntó sobre la facilidad de 
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta2.png}
+	\includegraphics[scale=0.2]{Encuesta2.png}
 	\caption{Pregunta sobre facilidad de navegación} \textbf{Referencia: Elaboracion propia} 
 	\label{Encuesta2}
 \end{figure}
@@ -160,7 +195,7 @@ Enfocamos una pregunta en la comodidad de la persona al utilizar la aplicación 
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta3.png}
+	\includegraphics[scale=0.2]{Encuesta3.png}
 	\caption{Pregunta sobre la experiencia usando la app} \textbf{Fuente:} Elaboración propia 
 	\label{Encuesta3}
 \end{figure}
@@ -171,7 +206,7 @@ Se formuló también una pregunta, enfocada en que tan visible es la informació
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta4.png}
+	\includegraphics[scale=0.2]{Encuesta4.png}
 	\caption{Pregunta sobre colores e información} \textbf{Fuente:} Elaboración propia 
 	\label{Encuesta4}
 \end{figure}
@@ -180,7 +215,7 @@ Al ser una aplicación, en la cual se busca adaptación hacia los distintos disp
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta5.png}
+	\includegraphics[scale=0.2]{Encuesta5.png}
 	\caption{Pregunta proporción de información} \textbf{Fuente:} Elaboración propia 
 	\label{Encuesta5}
 \end{figure}
@@ -193,7 +228,7 @@ Se planteó una pregunta en relación a la accesibilidad como en la figura \ref{
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta6.png}
+	\includegraphics[scale=0.2]{Encuesta6.png}
 	\caption{Pregunta indicaciones de ingreso a ventanas} \textbf{Fuente:} Elaboración propia
 	\label{Encuesta6}
 \end{figure}
@@ -202,7 +237,7 @@ Se planteó una pregunta en relación a los textos como en la figura \ref{Encues
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta7.png}
+	\includegraphics[scale=0.2]{Encuesta7.png}
 	\caption{Pregunta sobre dificultad de lectura de textos} \textbf{Fuente:} Elaboración propia
 	\label{Encuesta7}
 \end{figure} 
@@ -211,21 +246,101 @@ Se planteó una pregunta en relación a la relación u organización entre texto
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.3]{Encuesta8.png}
+	\includegraphics[scale=0.2]{Encuesta8.png}
 	\caption{Pregunta de opinión sobre la organizacion de la información } \textbf{Fuente:} Elaboración propia
 	\label{Encuesta8}
 \end{figure}
 
 Para el caso de la pregunta abierta, fue tipo sugerencias, mejoras o quejas que se tuviera sobre la aplicación, en donde se resaltó, que los colores de la aplicación está bien, pero tratar de hacer más llamativa la aplicación.
 
-\section{Conclusiones y Trabajos Futuros}
-Se determina que la visión artificial, puede ser utilizada como un método efectivo para establecer los valores de las respectivas pruebas, sometidas en esta investigación, arrojando valores favorables para su implementación.
-
-Los materiales y métodos utilizados permiten que esta investigación sea fácil de aplicar, de bajo costo  y repetible.
-
-Se logró verificar que el método basado en visión de máquina, para la toma de datos al realizar la batería de pruebas EUROFIT, es fiable en la toma de datos de los participantes, teniendo un porcentaje de confiabilidad de 95\%, dando lugar a la posibilidad de implementar este tipo de tecnología en los procesos de medir la capacidad física.  
- .
+\section{Conclusiones }
+\begin{itemize}
+\item Se logró implementar un sistema de microfotografía con el celular Huawei P30 pro, que cumple la función de  cámara, un “Lente Gran Angular" que realiza la función de microscopio, realizando un mayor zoom sobre el área de trabajo, una lámpara led, como iluminación y un soporte diseñado de forma particular, consiguiendo un acople casi perfecto con el teléfono, brindando seguridad y tomas más precisas; la unión de todos estos elementos, permitió no solo obtener un área de captura de  4.45086 mm2, si no también un sistema que puede ser implementado y adaptado en distintas plantas que hagan uso de la flotación por aire disuelto.
+\item Con ayuda de la librería de uso libre OpenCV  y C\#, se desarrolló un algoritmo que utilizando funciones básicas de filtrado, con el propósito de eliminar información no deseada sobre la escena,   también con la función de Hough circules, como método de detección de microburbujas, además de operaciones básicas para el cálculo de velocidad; se puso en funcionamiento un algoritmo con capacidad de detectar microburbujas de tamaños 22$\mu$m a 215 $\mu$m  y velocidades de 2,0966 mm/seg a  21,8404 mm/seg, el algoritmo demostró tener la capacidad de hacer estimaciones de tamaño y velocidad fuera de los límites establecidos, haciendo de este un sistema flexible que puede ser utilizado en pruebas más rigurosas y específicas, haciendo un análisis prácticamente en el tiempo de ejecución del video a procesar.
+\item El procesamiento de imágenes demostró ser un medio para caracterización de microburbujas de implementación sencilla puesto a que se necesitan contados recursos para ser empleada y esto sin alterar la planta donde se usa la flotación por aire, presentando un buen desempeño y resultados satisfactorios. Pero este método también presenta algunas notables dificultades, en cuestión de cómo se plantea el cálculo de la velocidad, al ser calculada en un plano 2D el avance de las burbujas hacia el fondo no es apreciado correctamente, e incluso puede alterar el tamaño de algunas burbujas ya que se están alejando del plano focal de captura. En cuestión del tamaño algunas burbujas de gran tamaño las cuales se encuentran al fondo de la zona de captura de imágenes, pueden alterar algunos filtros del procesamiento, lo cual implica que se pueden tener en cuenta burbujas que no se estipulan como válidas según las condiciones de cada proyecto.
+\item El software unity, al ser una herramienta multiplataforma, cuyo lenguaje de programación base es C\#, el cual a su vez se puede conectar con OpenCv e implementar diferentes librerías, permite poner en práctica, una aplicación que lleva inmerso un algoritmo capaz de realizar caracterización de microburbujas, que además permite al usuario agregar sus propios videos para caracterizar, siempre que cumplan con las condiciones ya definidas, la interfaz mostrada, lleva al usuario paso a paso, por cada proceso, dejando al final con un resumen gráfico sobre el diámetro y velocidad detectadas, adicional esta aplicación puede operar en dispositivos android los cuales tengan las características mínimas de funcionamiento.
+\end{itemize}.
 
 \bibliographystyle{IEEEtran}
 \bibliography{Ref}
+
+\section{Anexos}
+\begin{table*}[t]
+	\begin{tabular}{| c | c | c | c | c | c | c | c |}
+	\hline
+	
+		\multicolumn{8}{ |c| }{\textbf{Primer lote 36 psi}} \\ \hline
+	 	\multirow{2}{*}{\textbf{Video}} & \multirow{2}{*}{\textbf{Burbujas}} & \multicolumn{3}{ |c| }{\textbf{Diametro ($\mu$m)}} & \multicolumn{3}{ |c| }{\textbf{Velocidad (mm/s)}} \\
+ 		&  & \textbf{Minimo} & \textbf{Maximo} & \textbf{Promedio} &\textbf{Minima} & \textbf{Maxima} & \textbf{Promedio}\\ \hline
+ 	1 & 16 & 22,0147 & 211,3420 & 86,78 & 2,0966 & 14,6563 & 3,57 \\
+ 	2 & 11 & 35,2236 & 149,7005 & 79,04 & 2,0966 & 10,6365 & 3,64 \\
+ 	3 & 12 & 35,2236 & 189,3272 & 102.31 & 2,0966 & 14,5087 & 7,11  \\
+ 	4 & 11 & 26,4177 & 180,5213 & 88.58 & 2,0966 & 2,8017 & 2,11  \\
+ 	5 & 13 & 35,2236 & 114,4769 & 62,29 & 2,0966 & 4,6051 & 2,2 \\
+ 	6 & 13 & 30,8207 & 83,6562 & 58,1 & 2,0966 & 2,0966 & 2,1 \\
+ 	7 & 27 & 26,4177 & 101,2680 & 50,11 & 2,0966 & 16,9476 & 6,04 \\
+ 	8 & 15 & 22,0147 & 195,9316 & 89.84 & 2,0966 & 11,9172 & 5,13 \\
+ 	9 & 10 & 22,0147 & 149,7005 & 65.18 & 2,0966 & 9,8784 & 3,68 \\
+ 	10 & 10 & 22,0147  & 110,0739 & 60.13 & 2,0966 & 4,7312 & 2,55 \\
+ 	11 & 15 & 30,8207  & 113,0092 & 78.5 & 2,0966  & 2,0966 & 2,1 \\
+ 	12 & 10 & 44,0295  & 136,4917 & 82.38 & 2,0966  & 10,4066 & 4,06 \\
+ 	13 & 10 & 30,8207 & 184,9242 & 80.9 & 2,0966 & 12,0557 & 2,9  \\
+ 	14 & 14 & 22,0147 & 193,7301 & 83.22 & 2,0966 & 8,2364 & 2,33 \\
+ 	\bottomrule
+	\end{tabular}
+	\caption{Resultados primer lote 36 psi}
+\label{R2}
+\end{table*}
+
+\begin{table*}[t]
+	\begin{tabular}{| c | c | c | c | c | c | c | c |}
+	\hline
+	
+		\multicolumn{8}{ |c| }{\textbf{Segundo lote 34 psi}} \\ \hline
+	 	\multirow{2}{*}{\textbf{Video}} & \multirow{2}{*}{\textbf{Burbujas}} & \multicolumn{3}{ |c| }{\textbf{Diametro ($\mu$m)}} & \multicolumn{3}{ |c| }{\textbf{Velocidad (mm/s)}} \\
+ 		&  & \textbf{Minimo} & \textbf{Maximo} & \textbf{Promedio} &\textbf{Minima} & \textbf{Maxima} & \textbf{Promedio}\\ \hline
+ 	1 & 11 & 22,0147 & 189,3272 & 105,88 & 2,0966 & 12,7219 & 2,44 \\
+ 	2 & 24 & 22,0147 & 211,3420 & 94,22 & 2,0966 & 12,4588 & 5,78 \\
+ 	3 & 21 & 26,4177 & 184,9242 & 62,95 & 2,0966 & 6,6973 & 2,17  \\
+ 	4 & 31 & 44,0295 & 193,7301 & 103,09 & 2,0966 & 7,7355 & 2,87  \\
+ 	5 & 16 & 39,6266 & 193,7301 & 86,83 & 2,0966 & 14,2034 & 3,54 \\
+ 	6 & 35 & 22,0147 & 167,3124 & 74,96 & 2,0966 & 9,3968 & 3,49 \\
+ 	7 & 17 & 22,0147 & 211,3420 & 106,96 & 2,0966 & 16,1556 & 3,21  \\
+ 	8 & 40 & 26,4177 & 206,9390 & 90,18 & 2,0966 & 10,2320 & 2,56 \\
+ 	9 & 16 & 22,0147 & 198,1331 & 91,17 & 2,0966 & 2,0966 & 2,1 \\
+ 	10 & 27 & 22,0147  & 180,5213 & 90,57 & 2,0966  & 11,6747 & 2,68 \\
+ 	11 & 26 & 22,0147  & 211,3420 & 75,57 & 2,0966  & 2,0966 & 2,1 \\
+ 	12 & 28 & 22,0147  & 180,5213 & 82,42 & 2,0966  & 8,1826 & 2,47 \\
+ 	13 & 23 & 30,8207 & 215,7449 & 93,23 & 2,0966 & 12,2649 & 2,95 \\
+ 	\bottomrule
+	\end{tabular}
+	\caption{Resultados segundo lote 34 psi}
+\label{R3}
+\end{table*}
+
+\begin{table*}[t]
+	\begin{tabular}{| c | c | c | c | c | c | c | c |}
+	\hline
+	
+		\multicolumn{8}{ |c| }{\textbf{Segundo lote 36 psi}} \\ \hline
+	 	\multirow{2}{*}{\textbf{Video}} & \multirow{2}{*}{\textbf{Burbujas}} & \multicolumn{3}{ |c| }{\textbf{Diametro ($\mu$m)}} & \multicolumn{3}{ |c| }{\textbf{Velocidad (mm/s)}} \\
+ 		&  & \textbf{Minimo} & \textbf{Maximo} & \textbf{Promedio} &\textbf{Minima} & \textbf{Maxima} & \textbf{Promedio}\\ \hline
+ 	1 & 18 & 22,0147 & 162,9094 & 88,69 & 2,0966 & 12,8390 & 3,03 \\
+ 	2 & 29 & 35,2236 & 215,7449 & 92,27 & 2,0966 & 7,4193& 2,52 \\
+ 	3 & 38 & 22,0147 & 165,8447 & 77,95 & 2,0966 & 11,3939 & 4,53  \\
+ 	4 & 20 & 22,0147 & 206,9390 & 91,69 & 2,0966 & 6,5507 & 2,35  \\
+ 	5 & 24 & 26,4177 & 206,9390 & 91,65 & 2,0966 & 12,9895 & 3,51 \\
+ 	6 & 35 & 22,0147 & 167,3124 & 74,96 & 2,0966 & 9,3968 & 3,49 \\
+ 	7 & 19 & 22,0147 & 198,1331 & 63,1 & 2,0966 & 8,1193 & 2,26  \\
+ 	8 & 16 & 30,8207 & 202,5361 & 98,15 & 2,0966 & 14,3450 & 4,77 \\
+ 	9 & 25 & 22,0147 & 149,7005 & 59,89 & 2,0966 & 13,1504 & 4,46 \\
+ 	10 & 11 & 35,2236  & 132,0887 & 73,81 & 2,0966  & 13,7998 & 5,08 \\
+ 	11 & 22 & 22,0147  & 198,1331 & 74,9 & 2,0966  & 8,9282 & 3,39 \\
+ 	12 & 28 & 33,0221  & 198,1331 & 71,5 & 2,0966  & 21,8404 & 7,18 \\
+ 	\bottomrule
+	\end{tabular}
+	\caption{Resultados segundo lote 36 psi}
+\label{R4}
+\end{table*}
+
 \end{document}
