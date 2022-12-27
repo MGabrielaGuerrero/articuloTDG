@@ -128,11 +128,10 @@ Para realizar la identificación de MB, se utilizó la transformada de Hough, es
 
 \subsubsection{Calculo de trayectorias}
 
-Para iniciar con el algoritmo de seguimiento, el cual se encarga de identificar una misma burbuja a lo largo de la trayectoria, hay que tener presente que el ascenso de las burbujas no es lineal, por lo que para el cálculo de distancia se usa la forma euclidiana, además se hace necesario declarar un listado auxiliar en donde se almacenarán las burbujas ya ordenadas de acuerdo a su par anterior; del proceso anterior se retornan dos listas que contienen el radio, la coordenada en $x$ y la coordenada en $y$, de las burbujas que llegan desde abajo y las burbujas totales en el frame,  para iniciar el proceso se hace un recorrido de cada uno de los elementos guardados en la lista de burbujas que llegan desde abajo, y a este se le aplica la función de distancias mínimas, la cual consiste en declarar un lista de coordenadas de distancias inicialmente vacía, se toma cada valor de la MB que viene desde abajo y por cada burbuja detectada se calcula la distancia, es decir, se tiene el  punto $x(1)$, y $x(2)$ para calcular la distancia en $x$, además de $y(1)$ y $y(2)$ para calcular la distancia en $Y$, con los dos valores se aplica la raíz cuadrada de la suma de los cuadrados,  obteniendo así la distancia para cada burbuja y se almacena en un la lista de distancias, como lo que se busca es las coordenadas de la burbuja para futuros procesos y se sabe que la posición de las coordenadas corresponde al de la distancia, pero el valor de interés es el más pequeño, entonces se creó una lista copia de las distancias, a la cual se le realizó un ordenamiento y con ello se obtiene que en la posición 0 esta la distancia más pequeña, ya con el valor de distancia mínima determinada, se busca la posición de esta distancia en la lista original, con la ubicación encontrada, se procede a guardar las coordenadas de la burbuja en la lista MB ordenadas.
-
+Para iniciar con el algoritmo de seguimiento, el cual se encarga de identificar una misma burbuja a lo largo de la trayectoria, hay que tener presente que el ascenso de las burbujas no es lineal, por lo que para el cálculo de distancia se usa la ecuación euclidiana, además se hace necesario declarar un listado auxiliar en donde se almacenarán las burbujas ya ordenadas de acuerdo a su par anterior; del proceso anterior se retornan dos listas que contienen el radio, la coordenada en $x$ y la coordenada en $y$, de las burbujas que llegan desde la parte inferior y las burbujas totales en el frame,  para iniciar el proceso se hace un recorrido de cada uno de los elementos guardados en la lista de burbujas que llegan desde abajo, y a este se le aplica la función de distancias mínimas, la cual consiste en declarar un lista de coordenadas de distancias inicialmente vacía, se toma cada valor de la MB que viene desde abajo y por cada burbuja detectada se calcula la distancia, es decir, se tiene el  punto $x(1)$, y $x(2)$ para calcular la distancia en $x$, además de $y(1)$ y $y(2)$ para calcular la distancia en $Y$, con los dos valores se aplica la raíz cuadrada de la suma de los cuadrados,  obteniendo así la distancia para cada burbuja y se almacena en un la lista de distancias, como lo que se busca es las coordenadas de la burbuja para futuros procesos y se sabe que la posición de las coordenadas corresponde al de la distancia, pero el valor de interés es el más pequeño, entonces se creó una lista copia de las distancias, a la cual se le realizó un ordenamiento y con ello se obtiene que en la posición 0 esta la distancia más pequeña, ya con el valor de distancia mínima determinada, se busca la posición de esta distancia en la lista original. Con la ubicación encontrada, se procede a guardar las coordenadas de la burbuja en la lista MB ordenadas.
 \subsubsection{Calculo de diámetro y velocidad }
 
-Este algoritmo recibe las burbujas ordenadas que serían las actuales, y por cada burbuja calcula la velocidad, pero para calcular la velocidad es necesario tener la distancia recorrida, se puede obtener a través de la fórmula euclidiana, para ello se hace uso de una variable auxiliar que permite recorrer la lista de coordenadas anteriores, de forma paralela al recorrido de las actuales, con ello se tiene el  punto $x(1)$, y $x(2)$ para calcular la distancia en $x$, además de $y(1)$ y $y(2)$ para calcular la distancia en $y$, con los dos valores se aplica la raíz cuadrada de la suma de los cuadrados obteniendo así la distancia para cada burbuja, ahora falta dividir por el tiempo, que corresponde al tiempo del vídeo y multiplicar por el valor de conversión de pixeles a mm, el resultado es la velocidad en mm/seg.
+Este algoritmo recibe las burbujas ordenadas que son las actuales, y por cada burbuja calcula la velocidad, pero para calcular la velocidad es necesario tener la distancia recorrida, la cual se obtiene a través de la fórmula euclidiana, para ello se hace uso de una variable auxiliar que permite recorrer la lista de coordenadas anteriores, de forma paralela al recorrido de las actuales, con ello se tiene el  punto $x(1)$, y $x(2)$ para calcular la distancia en $x$, además de $y(1)$ y $y(2)$ para calcular la distancia en $y$, con los dos valores se aplica la raíz cuadrada de la suma de los cuadrados obteniendo así la distancia para cada burbuja, ahora falta dividir por el tiempo, que corresponde al tiempo del vídeo y multiplicar por el valor de conversión de pixeles a mm, el resultado es la velocidad en mm/seg.
 
 
 \subsection{Adquisición de datos}
@@ -332,7 +331,39 @@ Para el caso de la pregunta abierta, fue tipo sugerencias, mejoras o quejas que 
 \bibliographystyle{IEEEtran}
 \bibliography{Ref}
 
+\newpage
 \section{Anexos}
+
+
+\begin{figure*}[h!]
+	\centering
+	\includegraphics[scale=0.6]{dispDia.png}
+	\caption{Dispersión de datos respecto al diámetro en ambas pruebas} \textbf{Referencia: Elaboración propia} 
+	\label{dispdia}
+\end{figure*}
+ 
+\begin{figure*}[h!]
+	\centering
+	\includegraphics[scale=0.6]{Diapro34.png}
+	\caption{Gráfico de tendencia de diámetro en ambos lotes 34 psi.} \textbf{Referencia: Elaboración propia} 
+	\label{diapro34}
+\end{figure*}
+
+\begin{figure*}[h!]
+	\centering
+	\includegraphics[scale=0.6]{Diapro36.png}
+	\caption{Gráfico de tendencia de diámetro en ambos lotes 36 psi.} \textbf{Referencia: Elaboración propia} 
+	\label{diapro36}
+\end{figure*}
+
+\begin{figure*}[h!]
+
+	\centering
+	\includegraphics[scale=0.6]{Dispvel.png}
+	\caption{Dispersión de datos respecto a la velocidad en ambas pruebas } \textbf{Referencia: Elaboración propia} 
+	\label{dispvel}
+\end{figure*}
+
 \begin{table*}[t]
 	\begin{tabular}{| c | c | c | c | c | c | c | c |}
 	\hline
