@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2022.7.23)  13 DEC 2022 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2022.7.23)  26 DEC 2022 22:24
 entering extended mode
 **./articulo.tex
 (articulo.tex
@@ -381,113 +381,166 @@ Overfull \hbox (1.7949pt too wide) in paragraph at lines 141--162
 [][] 
  []
 
+<dispDia.png, id=25, 648.021pt x 525.6438pt>
+File: dispDia.png Graphic file (type png)
+<use dispDia.png>
+Package pdftex.def Info: dispDia.png  used on input line 172.
+(pdftex.def)             Requested size: 226.81075pt x 183.97809pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1038) has occurred while \output is active []
 
  [5]
-Underfull \hbox (badness 1342) in paragraph at lines 172--173
+<Diapro34.png, id=30, 766.062pt x 523.2348pt>
+File: Diapro34.png Graphic file (type png)
+<use Diapro34.png>
+Package pdftex.def Info: Diapro34.png  used on input line 181.
+(pdftex.def)             Requested size: 229.82037pt x 156.97165pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Diapro36.png, id=31, 740.5266pt x 536.2434pt>
+File: Diapro36.png Graphic file (type png)
+<use Diapro36.png>
+Package pdftex.def Info: Diapro36.png  used on input line 188.
+(pdftex.def)             Requested size: 222.15968pt x 160.87425pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+
+Underfull \vbox (badness 4416) has occurred while \output is active []
+
+ [6 <./dispDia.png> <./Diapro34.png>]
+<trayectoria.png, id=37, 529.22719pt x 529.22719pt>
+File: trayectoria.png Graphic file (type png)
+<use trayectoria.png>
+Package pdftex.def Info: trayectoria.png  used on input line 197.
+(pdftex.def)             Requested size: 211.68712pt x 211.68712pt.
+<Dispvel.png, id=38, 738.5994pt x 523.2348pt>
+File: Dispvel.png Graphic file (type png)
+<use Dispvel.png>
+Package pdftex.def Info: Dispvel.png  used on input line 205.
+(pdftex.def)             Requested size: 295.43452pt x 209.2902pt.
+
+Overfull \hbox (58.58609pt too wide) in paragraph at lines 205--206
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 212--213
 \OT1/cmr/m/n/12 que en sus dis-pos-i-tivos la apli-cacion fun-
  []
 
-<Encuesta1.png, id=29, 1204.5pt x 506.6428pt>
+<Encuesta1.png, id=39, 1204.5pt x 506.6428pt>
 File: Encuesta1.png Graphic file (type png)
 <use Encuesta1.png>
-Package pdftex.def Info: Encuesta1.png  used on input line 177.
+Package pdftex.def Info: Encuesta1.png  used on input line 217.
 (pdftex.def)             Requested size: 481.79147pt x 202.65353pt.
 
-Overfull \hbox (244.94304pt too wide) in paragraph at lines 177--178
+Overfull \hbox (244.94304pt too wide) in paragraph at lines 217--218
 [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./Encuesta1.png>]
-<Encuesta2.png, id=33, 1204.5pt x 572.89032pt>
+<Encuesta2.png, id=40, 1204.5pt x 572.89032pt>
 File: Encuesta2.png Graphic file (type png)
 <use Encuesta2.png>
-Package pdftex.def Info: Encuesta2.png  used on input line 186.
+Package pdftex.def Info: Encuesta2.png  used on input line 226.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 186--187
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 226--227
  [][] 
  []
 
-<Encuesta3.png, id=34, 1204.5pt x 572.89032pt>
+[7 <./Diapro36.png> <./trayectoria.png> <./Dispvel.png>]
+<Encuesta3.png, id=48, 1204.5pt x 572.89032pt>
 File: Encuesta3.png Graphic file (type png)
 <use Encuesta3.png>
-Package pdftex.def Info: Encuesta3.png  used on input line 198.
+Package pdftex.def Info: Encuesta3.png  used on input line 238.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 198--199
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 238--239
  [][] 
  []
 
-<Encuesta4.png, id=35, 1204.5pt x 572.89032pt>
+<Encuesta4.png, id=49, 1204.5pt x 572.89032pt>
 File: Encuesta4.png Graphic file (type png)
 <use Encuesta4.png>
-Package pdftex.def Info: Encuesta4.png  used on input line 209.
+Package pdftex.def Info: Encuesta4.png  used on input line 249.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
-
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 209--210
- [][] 
- []
-
-<Encuesta5.png, id=36, 1204.5pt x 572.89032pt>
-File: Encuesta5.png Graphic file (type png)
-<use Encuesta5.png>
-Package pdftex.def Info: Encuesta5.png  used on input line 218.
-(pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
-
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 218--219
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./Encuesta2.png> <./Encuesta3.png> <./Encuesta4.png> <./Encuesta5.png>]
-<Encuesta6.png, id=41, 1204.5pt x 589.4522pt>
-File: Encuesta6.png Graphic file (type png)
-<use Encuesta6.png>
-Package pdftex.def Info: Encuesta6.png  used on input line 231.
-(pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
-
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 231--232
- [][] 
- []
-
-<Encuesta7.png, id=42, 1204.5pt x 589.4522pt>
-File: Encuesta7.png Graphic file (type png)
-<use Encuesta7.png>
-Package pdftex.def Info: Encuesta7.png  used on input line 240.
-(pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
-
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 240--241
- [][] 
- []
-
-<Encuesta8.png, id=43, 1204.5pt x 628.59843pt>
-File: Encuesta8.png Graphic file (type png)
-<use Encuesta8.png>
-Package pdftex.def Info: Encuesta8.png  used on input line 249.
-(pdftex.def)             Requested size: 240.89574pt x 125.71745pt.
 
 Overfull \hbox (4.0473pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
-[8 <./Encuesta6.png> <./Encuesta7.png> <./Encuesta8.png>]
-Underfull \hbox (badness 1057) in paragraph at lines 258--259
+<Encuesta5.png, id=50, 1204.5pt x 572.89032pt>
+File: Encuesta5.png Graphic file (type png)
+<use Encuesta5.png>
+Package pdftex.def Info: Encuesta5.png  used on input line 258.
+(pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
+
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 258--259
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 259--259
+[]\OT1/cmr/m/n/12 Figure 13: |Pre-gunta pro-porcion de in-for-
+ []
+
+[8 <./Encuesta1.png> <./Encuesta2.png> <./Encuesta3.png> <./Encuesta4.png>]
+<Encuesta6.png, id=54, 1204.5pt x 589.4522pt>
+File: Encuesta6.png Graphic file (type png)
+<use Encuesta6.png>
+Package pdftex.def Info: Encuesta6.png  used on input line 271.
+(pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
+
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 271--272
+ [][] 
+ []
+
+<Encuesta7.png, id=55, 1204.5pt x 589.4522pt>
+File: Encuesta7.png Graphic file (type png)
+<use Encuesta7.png>
+Package pdftex.def Info: Encuesta7.png  used on input line 280.
+(pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
+
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 280--281
+ [][] 
+ []
+
+<Encuesta8.png, id=56, 1204.5pt x 628.59843pt>
+File: Encuesta8.png Graphic file (type png)
+<use Encuesta8.png>
+Package pdftex.def Info: Encuesta8.png  used on input line 289.
+(pdftex.def)             Requested size: 240.89574pt x 125.71745pt.
+
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 289--290
+ [][] 
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 298--299
 \OT1/cmr/m/n/12 un \Lente Gran An-gu-lar" que re-al-iza
  []
 
-(articulo.bbl
+[9 <./Encuesta5.png> <./Encuesta6.png> <./Encuesta7.png>] (articulo.bbl
 Underfull \hbox (badness 1888) in paragraph at lines 25--28
 \OT1/cmr/m/n/12 flota-tion col-umn,'' \OT1/cmr/m/it/12 In-ter-na-tional Jour-
  []
 
-[9]
+
+Underfull \vbox (badness 2277) has occurred while \output is active []
+
+ [10 <./Encuesta8.png>]
 Underfull \hbox (badness 1194) in paragraph at lines 86--89
 \OT1/cmr/m/it/12 ra-tion and Pu-rifi-ca-tion Tech-nol-ogy\OT1/cmr/m/n/12 , p.
  []
@@ -497,7 +550,7 @@ Underfull \hbox (badness 1400) in paragraph at lines 111--115
 []\OT1/cmr/m/n/12 B. In-vero, ``In-vero alu-minium
  []
 
-
+[11]
 Overfull \hbox (13.87674pt too wide) in paragraph at lines 118--122
 \OT1/cmr/m/n/12 https://articulo.mercadolibre.com.co/MCO-
  []
@@ -517,7 +570,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--129
 \OT1/cmr/m/n/12 mejorado-angular-profesional-
  []
 
-[10]
+
 Underfull \hbox (badness 2293) in paragraph at lines 132--135
 []\OT1/cmr/m/n/12 Huawei, ``Huawei p30 pro,''
  []
@@ -538,32 +591,32 @@ Overfull \hbox (30.65712pt too wide) in paragraph at lines 132--135
  []
 
 )
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 269--291
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 309--331
 [][] 
  []
 
 
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 296--317
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 336--357
 [][] 
  []
 
 
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 322--342
+Overfull \hbox (1.7949pt too wide) in paragraph at lines 362--382
 [][] 
  []
 
-[11
+[12
 
-] [12] [13] (articulo.aux)
+] [13] [14] (articulo.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4462 strings out of 492895
- 68054 string characters out of 3133479
- 156755 words of memory out of 3000000
- 8304 multiletter control sequences out of 15000+200000
+ 4492 strings out of 492895
+ 68505 string characters out of 3133479
+ 158801 words of memory out of 3000000
+ 8329 multiletter control sequences out of 15000+200000
  12750 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,9n,39p,1898b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -573,9 +626,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb>
-Output written on articulo.pdf (13 pages, 857816 bytes).
+Output written on articulo.pdf (14 pages, 1074924 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

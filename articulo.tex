@@ -164,8 +164,48 @@ En el primer lote se tomaron 18 videos con una presión de 34 psi y 22 videos co
 \end{table*}
 
 En el segundo lote, al igual que el primero se conservaron las condiciones previamente establecidas, con la única variante que para este lote se usó un distinto tubo Venturi, debido al desgaste antes mencionado, se tomaron 25 videos a 34 psi y para 36 psi 26 para un total de 41. De este lote se seleccionaron 24 videos que cumplían las condiciones antes expuestas, Los datos correspondientes a los resultados a una presión de 36psi del primer lote y los del segundo lote se encuentran en la sección de Anexos en las tablas \ref{R2}, \ref{R3} y \ref{R4} .
-En base a los datos presentados en las tablas existió una distribución variada de tamaños de microburbujas, se puede apreciar rangos desde  22um hasta 215um aproximadamente, esto debido al desgaste mencionado del tubo Venturi a lo largo de su uso, pero esta situación dio oportunidades de presenciar distintos tamaños de burbujas para probar el alcance del algoritmo, el cual cumple satisfactoriamente la detección de burbujas dentro de los rangos estipulados en los objetivos e incluso tamaños mucho menores. De la prueba también se observó que el promedio general en cuanto a tamaño de los videos a 34psi del primer lote fue de 62,384$\mu$m y de 36 psi del mismo lote fue 76,24$\mu$m, por otro lado, en el segundo lote los promedios fueron de 80,6741667$\mu$m y 89,0792308$\mu$m para 36 y 34 psi respectivamente, esta distinción en cuanto al tamaño promedio en cada lote se atribuye al cambio de tubos Venturi, puesto que al ser una impresión 3D, cada tubo presenta comportamientos distintos al generar microburbujas.
-En cuanto a la velocidad siempre se mantuvo un valor mínimo estable de 2,0966 mm/s, esto puesto a que la velocidad es influencia por el tamaño y que el algoritmo tiene un rango mínimo de detección por tamaño, las velocidades de estas pequeñas burbujas se mantenían prácticamente similares. Se presentó un rango de velocidad de 2,0966mm/s hasta 21,8404 mm/s, en el calculo de esta variable se presentaron algunos casos como que algunas burbujas presentaban una alta velocidad debido a que estas se estaban desplazando linealmente hacia arriba y también que algunas presentaban mayor tamaño, como la literatura define que burbujas de mayor tamaño tienen mayores velocidades, otro caso es el que algunas se desplazan hacia el fondo, lo cual da un efecto de velocidad mas reducida, en general las velocidades obtenidas entran dentro de los rangos estipulados en los objetivos e incluso el algoritmo es capaz de estimar velocidades mayores.
+
+A partir de los datos presentados en las tablas, existió una distribución variada de tamaños de microburbujas cómo se expresa en el gráfico de la figura \ref{dispdia}, se puede apreciar rangos desde  22$\mu$m hasta 215$\mu$m aproximadamente, esto debido al desgaste mencionado del tubo Venturi a lo largo de su uso, pero esta situación dio oportunidades de presenciar distintos tamaños de burbujas para probar el alcance del algoritmo, el cual cumple satisfactoriamente la detección de burbujas dentro de los rangos estipulados en los objetivos e incluso tamaños mucho menores.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.35]{dispDia.png}
+	\caption{Dispersión de datos respecto al diámetro en ambas pruebas} \textbf{Referencia: Elaboración propia} 
+	\label{dispdia}
+\end{figure}
+ 
+De la prueba también se observó que el promedio general en cuanto al  diámetro, los vídeos a 34psi del primer lote fue de 62,384$\mu$m y de 36 psi del mismo lote fue 76,24$\mu$m, por otro lado, en el segundo lote los promedios fueron de 80,6741667$\mu$m y 89,0792308$\mu$m para 36 y 34 psi respectivamente esta información se visualiza de mejor forma en las figuras \ref{diapro34} y \ref{diapro36}. Esta distinción en cuanto al tamaño promedio en cada lote se atribuye al cambio de tubos Venturi, puesto que al ser una impresión 3D, cada tubo presenta comportamientos distintos al generar microburbujas
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{Diapro34.png}
+	\caption{Gráfico de tendencia de diámetro en ambos lotes 34 psi.} \textbf{Referencia: Elaboración propia} 
+	\label{diapro34}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{Diapro36.png}
+	\caption{Gráfico de tendencia de diámetro en ambos lotes 36 psi.} \textbf{Referencia: Elaboración propia} 
+	\label{diapro36}
+\end{figure}
+
+En cuanto a la velocidad siempre se mantuvo un valor mínimo estable de 2,0966 mm/seg como se aprecia en la figura \ref{dispvel}, esto puesto a que la velocidad es influencia por el tamaño y que el algoritmo tiene un rango mínimo de detección por tamaño, las velocidades de estas pequeñas burbujas se mantenían prácticamente similares. Se presentó un rango de velocidad de 2,0966mm/seg hasta 21,8404 mm/seg, en el calculo de esta variable se presentaron algunos casos como que algunas burbujas presentaban una alta velocidad debido a que estas se estaban desplazando linealmente hacia arriba y también que algunas presentaban mayor tamaño, como la literatura define que burbujas de mayor tamaño tienen mayores velocidades, otro caso es el que algunas se desplazan hacia el fondo, lo cual da un efecto de velocidad mas reducida, Para comprobar esta cuestión se realizo un grafico donde se pintaba en tiempo real en la misma imagen la trayectoria de las burbujas dando una visualización del movimiento que estas hacían a lo largo del video como se muestra en la figura \ref{trayectoria}. En general las velocidades obtenidas entran dentro de los rangos estipulados en los objetivos e incluso el algoritmo es capaz de estimar velocidades mayores.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.4]{trayectoria.png}
+	\caption{Trayectoria del desplazamiento de las microburbujas } \textbf{Referencia: Elaboración propia} 
+	\label{trayectoria}
+\end{figure}
+
+\begin{figure}[h!]
+
+	\centering
+	\includegraphics[scale=0.4]{Dispvel.png}
+	\caption{Dispersión de datos respecto a la velocidad en ambas pruebas } \textbf{Referencia: Elaboración propia} 
+	\label{dispvel}
+\end{figure}
 
 \section{INTERFAZ}
 
