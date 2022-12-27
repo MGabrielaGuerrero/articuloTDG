@@ -44,88 +44,105 @@ El artículo se compone de 5 secciones, en la sección l se encuentra la introdu
 
 \section{Metodología}
 La metodología a seguir para la implementación de la propuesta, está dividido en 3 fases, primera fase correspondiente al diseño del sistema de microfotografía,  la segunda enfocada en el desarrollo del algoritmo basado en visión de máquina, finalmente se describe el proceso de toma de vídeos para su posterior procesamiento.
+\subsection{Sistema de Microfotografía}
 
-\subsection{sistema de microfotografía }
+Debido a las características particulares presentes en la planta en la cual se pondrá a prueba el sistema de microfotografía, se selecciono los siguientes elementos que permiten cumplir la labor de caracterización de microburbujas de formas más cómoda y eficiente. Como soporte se creó una base de aluminio, la cual  se compone de dos ganchos los cuales se ajustan en la parte superior de un lateral del tanque DAF y la base donde se acomoda la cámara como se muestra en la figura \ref{soporte}, este permite que la cámara se encuentre lo más cerca al tanque, logrando así una mejor captura de las microburbujas, la base cuenta con unas medidas de 4*17*1 cm de alto, ancho y profundidad respectivamente, y los ganchos o brazos tienen   30*1*0,2 cm de alto, ancho y profundidad, una distancia de doblez  de 3,5 cm,  en esta última medida se tuvo en cuenta el tamaño del lente y el de la propia base, ajustando de forma precisa el montaje de microfotografía evitando así interferir en el ángulo de la cámara \cite{tripode}. 
 
-Debido a las características particulares presentes en la planta en la cual se pondrá a prueba el sistema de microfotografía, se escogieron los siguientes elementos que permiten cumplir la labor de caracterización de microburbujas de formas más cómoda y eficiente. Como soporte se creó una base de aluminio, la cual  se compone de dos ganchos los cuales se ajustan en la parte superior de un lateral del tanque DAF y la base donde se acomoda la cámara, este permite que la cámara se encuentre lo más cerca al tanque, logrando así una mejor captura de las microburbujas, la base cuenta con unas medidas de 4*17*1 cm de alto, ancho y profundidad respectivamente, y los ganchos o brazos tienen   30*1*0,2 cm de alto, ancho y profundidad, una distancia de doblez  de 3,5 cm,  en esta última medida se tuvo en cuenta el tamaño del lente y el de la propia base, ajustando de forma precisa el montaje de microfotografía evitando asi interferir en el ángulo de la cámara \cite{tripode}. 
-
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{soporte.png}
-	\caption{Soporte Para teléfono móvil} \textbf{Fuente:} Elaboración propia
-	\label{lente}
+	\caption{Soporte para teléfono móvil} \textbf{Fuente:} Elaboración propia
+	\label{soporte}
 \end{figure}
 
-Como sistema de iluminación, se emplea una sola fuente de  luz  ubicada en el lado opuesto de la  cámara generando con ello una sistema de luz de fondo, se eligió una Lámpara  de Panel Led  Cuadrado S/p Luz Dia marca Karluz,  referencia kl-2201, con un Voltaje de 110 V  y una potencia de 12 W \cite{lampara} 
+Como sistema de iluminación, se emplea una sola fuente de  luz  ubicada en el lado opuesto de la  cámara generando con ello una sistema de luz de fondo, se eligió una lámpara de panel led  cuadrado S/p luz dia marca Karluz como se muestra en la figura \ref{lampara}, referencia kl-2201, con un Voltaje de 110 V  y una potencia de 12 W \cite{lampara} 
 
-El mecanismo óptico a utilizar es un "Lente Gran Angular" para teléfono inteligente, con clip 2 en 1,  compatible con iPhone, Samsung, Google Pixel, tiene unas dimensiones de 11.5cm*10.3cm*5.9cm, minimiza el deslumbramiento de la lente, la reflexión, el fantasma y otros artefactos para una excelente claridad,  dentro de sus características cuenta con un distancia focal de aproximadamente 7 cm permitiendo así una captura óptima de la imagen, Lente macro de 12,5 x,  lente de rosca de 1.457 pulgadas de diámetro, tomar fotos a una distancia de 1.18 a 1.57 pulgadas, tomar fotos a una distancia de 1.18 a 1.57 pulgadas \cite{lente}, este estará ubicado sobre el lente de la cámara.
-
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.05]{lente.jpg}
+	\includegraphics[scale=0.2]{lampara.jpg}
+	\caption{Lámpara de 12 W} \textbf{Tomado:} \cite{lampara}
+	\label{lampara}
+\end{figure}
+
+El mecanismo óptico a utilizar es un "Lente Gran Angular" para teléfono inteligente como se muestra en la figura \ref{lente}, con clip 2 en 1,  compatible con iPhone, Samsung, Google Pixel, tiene unas dimensiones de 11.5cm*10.3cm*5.9cm, minimiza el deslumbramiento de la lente, la reflexión, el fantasma y otros artefactos para una excelente claridad,  dentro de sus características cuenta con un distancia focal de aproximadamente 7 cm permitiendo así una captura óptima de la imagen, Lente macro de 12,5 x,  lente de rosca de 1.457 pulgadas de diámetro, permite tomar fotos a una distancia de 1.18 a 1.57 pulgadas \cite{lente}. Este estará ubicado sobre el lente de la cámara.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.1]{lente.jpg}
 	\caption{Lente para teléfono inteligente} \textbf{Tomado:} \cite{lente}
 	\label{lente}
 \end{figure}
 
-La cámara a utilizar es de un teléfono inteligente Huawei P30 pro, con 4 cámaras un lente SuperZoom, y un  lente ultra gran angular de 20 MP, la cámara es Super Sensing de 40 MP con un Zoom de 50x, la cámara posterior, es compatible con el enfoque automático (enfoque láser, enfoque de fase, enfoque de contraste), es compatible con AIS (Estabilización de imagen con IA de HUAWEI), cabe resaltar que en diferentes modos de fotografía, el número de píxeles puede ser ligeramente diferente \cite{Hawei}, dentro de los detalles más relevantes de la cámara tenemos:
-
+La cámara a utilizar es de un teléfono inteligente Huawei P30 pro, con 4 cámaras un lente SuperZoom, y un  lente ultra gran angular de 20 MP, la cámara es Super Sensing de 40 MP con un Zoom de 50x, la cámara posterior, es compatible con el enfoque automático (enfoque láser, enfoque de fase, enfoque de contraste), es compatible con AIS (Estabilización de imagen con IA de HUAWEI), cabe resaltar que en diferentes modos de fotografía, el número de píxeles puede ser ligeramente diferente \ref{hawei}, dentro de los detalles más relevantes de la cámara se encuentra:
 
 \begin{itemize}
-\item CÁMARA POSTERIOR: Cámara cuádruple Leica: 40 MP (Objetivo gran angular, apertura de f/1.6, OIS) + 20MPX (Objetivo ultra gran angular, apertura de f/2.2) + 8 MP (Teleobjetivo, apertura de f/3.4, OIS) La cámara de tiempo de vuelo (Time-of-Flight, TOF).
+\item CÁMARA POSTERIOR: Cámara cuádruple Leica: 40 MP (objetivo gran angular, apertura de f/1.6, OIS) + 20MPX (objetivo ultra gran angular, apertura de f/2.2) + 8 MP (teleobjetivo, apertura de f/3.4, OIS) la cámara de tiempo de vuelo (Time-of-Flight, TOF).
 \item CÁMARA FRONTAL: 32 MP, apertura de f/2.0.
-\item CAPTURA DE VÍDEO: en cámara lenta de hasta 960 fps (velocidadX32).
+\item CAPTURA DE VÍDEO: en cámara lenta de hasta 960 fps (velocidad X32).
 \end{itemize}
 
 
-\begin{figure}
+\begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.45]{Distribucion.png}
+	\includegraphics[scale=0.3]{hawei.png}
+	\caption{Teléfono inteligente} \textbf{Tomado:} \cite{Hawei} 
+	\label{hawei}
+\end{figure}
+
+Estos elementos se acoplan al sistema DAF,como se muestra en la figura \ref{disDAF}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{Distribucion2.png}
 	\caption{Distribución de los componentes de microfotografía en el sistema DAF} \textbf{Fuente:} Elaboración propia
 	\label{disDAF}
 \end{figure}
-
-Estos elementos se acoplan al sistema DAF,como se muestra en la figura \ref{disDAF}
 
 \subsection{Software}
 El algoritmo se realizo en C\#, en la plataforma unity, con ayuda de la librería de uso libre OpenCV versión 1.7.1.
 
 Esta sección estará dividida en 5 secciones, la primera enfocada en la preparación del vídeo, pre-procesamiento;  la segunda, es  el procesamiento inicial que se le aplicará al vídeo obtenido anteriormente con le fin de eliminar el mayor ruido posible, la siguiente en donde se explica el proceso de detección de las microburbujas en frames de vídeo, la cuarta  en donde se describe el proceso utilizado para realizar el seguimiento de las MB detectadas, en la última parte se encuentra el proceso de caracterización.
 
-
-
 \subsubsection{Pre-procesamiento de vídeo}
 
-Una vez tomados los vídeos, al ser insertado en Unity, este se encuentra en un formato llamado texture que vendría a ser como 3D, por ello primero se hace un paso a 2D, posteriormente se pasa esta información al formato Mat que es el requerido como entrada para las funciones de openCVSharp, finalmente aplicar la función Undistor, aplicando con ello la calibración de cámara.  
+El vídeo que procesa el algoritmo, se encuentra en formato 3D, es por ello que se realiza un paso a formato 2D, al igual que transformaciones para que cada frame del vídeo, pase por los distintos filtros. 
 
 \subsubsection{Eliminación de ruido}
+Para el proceso de caracterización, es importante que el objeto sea fácil de diferenciar del fondo, es por ello que se hace uso de los siguientes filtros.
 
-Para realizar la caracterizacion primeramente se realizar unos ajuste a la imagen, a través de la utilización de filtros, Como entrada el algoritmo recibe el frame a procesar, posteriormente se aplica una conversión  a escala de grises, después se aplica un filtro de mediana para eliminación de ruido, a continuación se aplicó el filtro de  gauss, para difuminar los elementos irrelevantes y el ruido, posteriormente se aplicó dos veces la función de relleno desde el punto (0,0) primero con un valor de 255, y después con 0, a continuación se aplicó la operación dilatación, posteriormente se utilizó la operación erosión, seguido de la aplicacion de binarizacion con el humbral  110,  para terminar se  utilizó el filtro de canny para determinar el contorno de las MB, en el valor de 0, utilizando una apertura de 3.
+\begin{enumerate}
+\item Conversión a escala de grises, con el objetivo de evitar reflejos indeseados. 
+\item Filtro de mediana, con la finalidad de eliminar contrastes de color fuertes.
+\item Filtro de Gauss, para difuminar los elementos irrelevantes y el ruido
+\item Operaciones morfológicas, con el fin de mejorar la calidad del objeto a inspeccionar.
+\item Filtro de Canny, con el propósito de realzar el contorno de las microburbujas.
+\end{enumerate}
+
+Es de resaltar, la aplicación será en el orden expuesto. 
 
 
 \subsubsection{Detección de microburbujas}
 
-Para realizar la identificación de MB, se utilizó la transformada de Hough, con un valor de acumulador en 0.5, con una distancia mínima entre los centros de 5, el primer parametro del metodo en 11 y el segundo en 14, un valor mínimo de radio en 0 y máximo en 20, esta función retorna un arreglo, de lo que en C\# se denomina CircleSegment, que contiene la información de radio, posición en X y posición en Y, además en este algoritmo se hace uso de dos lista de arreglos de enteros, una para guardar la información de todas las burbujas detectadas en el frame y el otro se usa para guardar la información de las burbujas que llegan desde abajo, es decir las burbujas que tienen un valor en la posición en Y mayor o igual a 670, eso se realiza para garantizar que la  caracterización se haga sobre las burbujas que realizan la trayectoria completa. 
+Para realizar la identificación de MB, se utilizó la transformada de Hough, esta función retorna un arreglo, de lo que en C\# denomina CircleSegment, que contiene la información de radio, posición en $x$, $y$; de cada microburbuja que se detectó, que es almacenada para un uso posterior, además se guardó, la información de las burbujas que llegan desde abajo, evitando con ello hacer seguimiento de las que provengan en otras direcciones y puedan entorpecer el proceso de caracterización. 
 
 
 \subsubsection{Calculo de trayectorias}
 
-Para iniciar con el algoritmo de seguimiento, el cual se encarga de identificar una misma burbuja a lo largo de la trayectoria, hay que tener presente que el ascenso de las burbujas no es lineal, por lo que para el cálculo de distancia se usa la forma euclidiana, además se hace necesario declarar un listado auxiliar en donde se almacenarán las burbujas ya ordenadas de acuerdo a su par anterior; del proceso anterior se retornan dos listas que contienen el radio, la coordenada en X y la coordenada en Y, de las burbujas que llegan desde abajo y las burbujas totales en el frame,  para iniciar el proceso se hace un recorrido de cada uno de los elementos guardados en la lista de burbujas que llegan desde abajo, y a este se le aplica la función de distancias mínimas, la cúal consiste en declarar un lista de coordenadas de distancias inicialmente vacía, se toma cada el valor de la Mb que viene desde abajo y por cada burbuja detectada se calcula la distancia, es decir, se tiene el  punto X1, y X2 para calcular la distancia en X, además de Y1 y Y2 para calcular la distancia en Y, con los dos valores se aplica la raíz cuadra de la suma de los cuadrados,  obteniendo así la distancia para cada burbuja y se almacena en un la lista de distancias, como lo que nos interesa es las coordenadas de la burbuja para futuros procesos y sabemos que la posición de las coordenadas corresponde al de la distancia, pero el valor de interés es el más pequeño, entonces se creó una lista copia de las distancias, a la cual se le realizó un ordenamiento y con ello obtenemos que en la posición 0 esta la distancia más pequeña, ya con el valor de distancia mínima determinada, lo que hacemos es buscar la posición de esta distancia en la lista original, con la ubicación encontrada, se procede a guardar las coordenadas de la burbuja en la lista Mb ordenadas.
-
+Para iniciar con el algoritmo de seguimiento, el cual se encarga de identificar una misma burbuja a lo largo de la trayectoria, hay que tener presente que el ascenso de las burbujas no es lineal, por lo que para el cálculo de distancia se usa la forma euclidiana, además se hace necesario declarar un listado auxiliar en donde se almacenarán las burbujas ya ordenadas de acuerdo a su par anterior; del proceso anterior se retornan dos listas que contienen el radio, la coordenada en $x$ y la coordenada en $y$, de las burbujas que llegan desde abajo y las burbujas totales en el frame,  para iniciar el proceso se hace un recorrido de cada uno de los elementos guardados en la lista de burbujas que llegan desde abajo, y a este se le aplica la función de distancias mínimas, la cual consiste en declarar un lista de coordenadas de distancias inicialmente vacía, se toma cada valor de la MB que viene desde abajo y por cada burbuja detectada se calcula la distancia, es decir, se tiene el  punto $x(1)$, y $x(2)$ para calcular la distancia en $x$, además de $y(1)$ y $y(2)$ para calcular la distancia en $Y$, con los dos valores se aplica la raíz cuadrada de la suma de los cuadrados,  obteniendo así la distancia para cada burbuja y se almacena en un la lista de distancias, como lo que se busca es las coordenadas de la burbuja para futuros procesos y se sabe que la posición de las coordenadas corresponde al de la distancia, pero el valor de interés es el más pequeño, entonces se creó una lista copia de las distancias, a la cual se le realizó un ordenamiento y con ello se obtiene que en la posición 0 esta la distancia más pequeña, ya con el valor de distancia mínima determinada, se busca la posición de esta distancia en la lista original, con la ubicación encontrada, se procede a guardar las coordenadas de la burbuja en la lista MB ordenadas.
 
 \subsubsection{Calculo de diámetro y velocidad }
 
-Este algoritmo recibe las burbujas ordenadas que serían las actuales, y por cada burbuja calcula la velocidad, pero para calcular la velocidad es necesario tener la distancia recorrida, se puede obtener a través de la fórmula euclidiana, para ello se hace uso de una variable auxiliar que permite recorrer la lista de coordenadas anteriores, de forma paralela al recorrido de las actuales, con ello se tiene el  punto X1, y X2 para calcular la distancia en X, además de Y1 y Y2 para calcular la distancia en Y, con los dos valores se aplica la raíz cuadra de la suma de los cuadrados obteniendo así la distancia para cada burbuja, ahora falta dividir por el tiempo, que corresponde al tiempo del video y multiplicar por el valor de conversión de pixeles a mm, para este caso, se calculo como: 0.6/272.544 mm/Px, dejando la velocidad en mm/seg
-
+Este algoritmo recibe las burbujas ordenadas que serían las actuales, y por cada burbuja calcula la velocidad, pero para calcular la velocidad es necesario tener la distancia recorrida, se puede obtener a través de la fórmula euclidiana, para ello se hace uso de una variable auxiliar que permite recorrer la lista de coordenadas anteriores, de forma paralela al recorrido de las actuales, con ello se tiene el  punto $x(1)$, y $x(2)$ para calcular la distancia en $x$, además de $y(1)$ y $y(2)$ para calcular la distancia en $y$, con los dos valores se aplica la raíz cuadrada de la suma de los cuadrados obteniendo así la distancia para cada burbuja, ahora falta dividir por el tiempo, que corresponde al tiempo del vídeo y multiplicar por el valor de conversión de pixeles a mm, el resultado es la velocidad en mm/seg.
 
 
 \subsection{Adquisición de datos}
 
-El propósito del proyecto es realizar el análisis de mb, a través de microfotografía, es por ello que se acopla el lente zoom, a la cámara del teléfono celular, este se ajusta al soporte para mantenerlo estático y minimizar el ruido.
+El propósito del proyecto es realizar el análisis de miroburbujas, a través de microfotografía, es por ello que se acopla el lente zoom, a la cámara del teléfono celular, este se ajusta al soporte para mantenerlo estático y minimizar el ruido.
 
-para realizar la grabación de las microburbujas, se requiere establecer una conexión inalámbrica entre el teléfono celular y computador, evitando así que el factor humano interfiera  con movimientos de la cámara, desconfiguraciones, entre otras; después de realizar con éxito la conexión,  se selecciona el modo de captura en “cámara lenta” y se desactiva el reconocimiento de movimiento, se debe configurar el modo de foco en manual, con el propósito de que el autoenfoque no vaya cambiando entre las cámaras del teléfono, también se configura el zoom a x2, los parámetros ISO, la apertura y la obturación según como se presenten las condiciones del entorno, esto refiere al posicionamiento del acople, ubicación de la lámpara y estado del tanque, manteniendo así un estándar para realizar los procedimientos.
+Para iniciar la grabación de las microburbujas, se requiere establecer una conexión inalámbrica entre el teléfono celular y el computador, evitando así que el factor humano interfiera  con movimientos de la cámara, desconfiguraciones, entre otras; después de realizar con éxito la conexión,  se selecciona el modo de captura en “cámara lenta” y se desactiva el reconocimiento de movimiento, se debe configurar el modo de foco en manual, con el propósito de que el autoenfoque no vaya cambiando entre las cámaras del teléfono, también se configura el zoom a x2, los parámetros ISO, la apertura y la obturación según como se presenten las condiciones del entorno, esto refiere al posicionamiento del acople, ubicación de la lámpara y estado del tanque, manteniendo así un estándar para realizar este procedimiento.
 
-El control de iluminación, se hace esencialmente cerrando de las cortinas del laboratorio evitando así el ingreso de luz exterior, también se apagan las lámparas, dejando únicamente encendida la lámpara que está asociada al tanque DAF. Para posicionar la cámara, 
-se utiliza el acople mencionado en la sección de diseño de hardware, soporte para teléfono móvil, el cual se ubica al ras del tanque.
+En el control de iluminación, se hace cierre de las cortinas del laboratorio evitando así el ingreso de luz exterior, también se apagan las lámparas, dejando únicamente encendida la lámpara que está asociada al tanque DAF. Para posicionar la cámara, 
+se utiliza el acople mencionado en la sección de diseño metodología, sistema de microfotografía, soporte para teléfono móvil, el cual se ubica al ras del tanque.
 
 
 
@@ -207,33 +224,43 @@ En cuanto a la velocidad siempre se mantuvo un valor mínimo estable de 2,0966 m
 	\label{dispvel}
 \end{figure}
 
-\section{INTERFAZ}
+\section{Prueba Interfaz}
 
-Después de recolectar información sobre los distintos dispositivos, se filtró las personas que en sus dispositivos la aplicación funciona debidamente, se proporcionó 3 videos extra a  las personas procurando que el medio donde fueron compartidos no disminuya la calidad del material; para las personas a las cuales se les presentaban dificultades al operar la aplicación, se les permitió interactuar con la versión de escritorio y con teléfonos proporcionados por nosotros; después de  15 minutos, se les procedió a aplicar una encuesta, que contiene preguntas  que manejan tres metodologías, escala de likert, preguntas dicotómicas y preguntas abiertas; de lo que podemos resaltar:
+Una vez obtenido los vídeos y analizados, se procedió reuniendo un grupo de 24 personas, a las cuales se les dio un contexto del proyecto, se les compartió la aplicación y se los dejo interactuar con la misma por 10 min, en donde se resolvieron preguntas que fueron surgiendo a lo largo del proceso.
+
+Después de compartirles la apk, se válido a que personas no les funcionó la aplicación, es decir  la aplicación no abría o se cerraba forzadamente, el 16.67\%, al igual que a los que les funcionaba la aplicación pero se ponía lenta o el vídeo no era fluido, el 25\% y por supuesto a las personas que les funcionó correctamente 58.33\%; también se les pidió que nos proporcionarán información sobre sus dispositivos como por ejemplo, Ram, Android, Procesador, de donde se obtuvo la siguiente información.
+
+
+
+En la tabla \ref{TablaCEL}, en la sección de anexos, se  encuentra el resumen de la información recolectada, dejando solo las características únicas, para así poder saber  que referencias mínimas podría tener el teléfono, para realizar un correcto procesamiento de la información: se puede decir que los celular con ram menor de 4 GB no son capaces de correr la aplicación, mientras que los celulares con esa misma cantidad de ram tiene una relación dependiente del procesador, por lo que para algunos es fácil correr la apk, pero para otros el vídeo presentaba latencia dificultando un correcto análisis, para características superiores no se encontró limitaciones, en relación a android la aplicación se puede instalar desde la versión 5.1.1.
+
+Después de recolectar información sobre los distintos dispositivos, a las personas que en sus dispositivos la aplicación funciona debidamente, se les proporcionó 3 vídeos extra a  las personas procurando que el medio donde fueron compartidos no disminuya la calidad del material; para las personas a las cuales se les presentaban dificultades al operar la aplicación, se les permitió interactuar con la versión de escritorio y con teléfonos proporcionados en la prueba; después de  15 minutos, se les procedió a aplicar una encuesta, que contiene preguntas  que manejan tres metodologías, escala de likert, preguntas dicotómicas y preguntas abiertas; de lo que podemos resaltar:
 
 \subsection{Usabilidad}
 
-\begin{figure}
-	\includegraphics[scale=0.4]{Encuesta1.png}
+Como se muestra en la figura \ref{Encuesta1} se preguntó sobre la facilidad de uso de la aplicación, de lo cual el 95.8\% de los encuestados respondieron que era fácil de usar y un 5.2\% respondieron que no, pero al tener un porcentaje superior del 80\% lo cual fue tomado como válido.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{Encuesta1.png}
 	\caption{Pregunta sobre facilidad de uso} \textbf{Fuente:} Elaboración propia 
 	\label{Encuesta1}
 \end{figure}
 
-Como se muestra en la figura \ref{Encuesta1} se preguntó sobre la facilidad de uso de la aplicación, de lo cual el 95.8\% de los encuestados respondieron que era fácil de usar y un 5.2\% respondieron que no, pero al tener un porcentaje superior del 80\% lo cual fue tomado como válido.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.2]{Encuesta2.png}
-	\caption{Pregunta sobre facilidad de navegación} \textbf{Referencia: Elaboracion propia} 
-	\label{Encuesta2}
-\end{figure}
 
 Al tener varias ventanas con distinta información, es importante saber si a la persona le es fácil llegar a la información, por lo que se usó una escala de 1 -5 como se muestra en la figura \ref{Encuesta2}  donde 1 es difícil y 5 es fácil, el 66.7\% le asignó un valor de 5, el 29.2\% un valor de 4 y el 4.2\% un valor de 3, al sumar el valor de las personas encuestadas que asignaron un valor de 5 - 4, tenemos un 95.8\% que nos permite darlo por válido. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{Encuesta2.png}
+	\caption{Pregunta sobre facilidad de navegación} \textbf{Referencia: Elaboración propia} 
+	\label{Encuesta2}
+\end{figure}
 
 
 Enfocamos una pregunta en la comodidad de la persona al utilizar la aplicación como se muestra en la figura \ref{Encuesta3},  en escala de likert lineal, donde 1 se considera malo y 5 se considera excelente, el 41.7\% de las personas respondieron que fue “excelente”, el 54.2\% respondieron “buena” y el 4.2\% respondió “regular”,  para la validación de esta pregunta el 80\% o más de las personas deben estar ubicadas en las escalas 4-5, de lo cual se obtuvo el 95.8\%.
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{Encuesta3.png}
 	\caption{Pregunta sobre la experiencia usando la app} \textbf{Fuente:} Elaboración propia 
@@ -244,7 +271,7 @@ Enfocamos una pregunta en la comodidad de la persona al utilizar la aplicación 
 
 Se formuló también una pregunta, enfocada en que tan visible es la información en tema de colores como se muestra en la figura \ref{Encuesta4} , utilizando un rango de 1 a 5, donde 1 es mala y 5 es buena, el 41.7\% le asignaron un 5, el 54.8\% un 4 y el 12.5\% un 3, para la validación se tenia que más del 80\% se encuentren entre 4 -5 y se obtuvo un 87.5\%.
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{Encuesta4.png}
 	\caption{Pregunta sobre colores e información} \textbf{Fuente:} Elaboración propia 
@@ -253,7 +280,7 @@ Se formuló también una pregunta, enfocada en que tan visible es la informació
 
 Al ser una aplicación, en la cual se busca adaptación hacia los distintos dispositivos, se enfoco una pregunta a este tema como se muestra en la figura \ref{Encuesta5}, utilizando un escala de 1 - 5 donde 1 es malo y 5 bueno, el 41.7\% asignaron un valor de 5, el 45.8\% un valor de 4 y el 12.5\% de 3, para validar esta pregunta se establece  un valor de 80\% o más entre 4-5, el total fue de 87.5\%.
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{Encuesta5.png}
 	\caption{Pregunta proporción de información} \textbf{Fuente:} Elaboración propia 
@@ -266,16 +293,16 @@ Debido a que se tiene tres secciones principales en la aplicación y estas conti
 
 Se planteó una pregunta en relación a la accesibilidad como en la figura \ref{Encuesta6} a través de los botones a cada venta, puesto a que no se puede evaluar información a la cual no se pudo acceder, en donde para la sección de “General”, 10 personas lo calificaron como excelente, 13 personas como buena, y 1 personas como regular, para validación se obtuvo 23 personas; para la sección de “Diámetro”, 11 lo calificaron como excelente, 11, como  buena, y 2 como regular, teniendo un valor final de 22 personas que lo validaron; para la sección de “Velocidad”, 10 votaron por excelente, 13 por  buena y 1 personas como regular, teniendo como valor final 23 personas para validación.
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{Encuesta6.png}
 	\caption{Pregunta indicaciones de ingreso a ventanas} \textbf{Fuente:} Elaboración propia
 	\label{Encuesta6}
 \end{figure}
 
-Se planteó una pregunta en relación a los textos como en la figura \ref{Encuesta7}, ya que a través de estos se informa sobre el estado del video, así mismo sobre los valores mínimo, máximo y promedio de Diámetro y velocidad, en donde para la sección de “General”, 11 personas lo calificaron como muy Fácil, 10 personas como fácil, y 3 personas como regular, para validación se obtuvo 21 personas; para la sección de “Diámetro”, 9 lo calificaron como muy fácil, 12, como fácil, y 3 como regular, teniendo un valor final de 21 personas que lo validaron; para la sección de “Velocidad”, 9 votaron por muy fácil, 13 por fácil, y 2 por regular, teniendo como valor final 22 personas para validación. 
+Se planteó una pregunta en relación a los textos como en la figura \ref{Encuesta7}, ya que a través de estos se informa sobre el estado del vídeo, así mismo sobre los valores mínimo, máximo y promedio de Diámetro y velocidad, en donde para la sección de “General”, 11 personas lo calificaron como muy Fácil, 10 personas como fácil, y 3 personas como regular, para validación se obtuvo 21 personas; para la sección de “Diámetro”, 9 lo calificaron como muy fácil, 12, como fácil, y 3 como regular, teniendo un valor final de 21 personas que lo validaron; para la sección de “Velocidad”, 9 votaron por muy fácil, 13 por fácil, y 2 por regular, teniendo como valor final 22 personas para validación. 
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{Encuesta7.png}
 	\caption{Pregunta sobre dificultad de lectura de textos} \textbf{Fuente:} Elaboración propia
@@ -284,7 +311,7 @@ Se planteó una pregunta en relación a los textos como en la figura \ref{Encues
 
 Se planteó una pregunta en relación a la relación u organización entre texto, gráficas y botones como en la figura \ref{Encuesta8}, para verificar que toda la información de relevancia se esté mostrando de forma correcta, en donde para la sección de “General”, 12 personas lo calificaron como excelente, 10 personas como buena, y 2 personas como regular, para validación se obtuvo 22 personas; para la sección de “Diámetro”, 10 lo calificaron como excelente, 13 como  buena, y 1 como regular, teniendo un valor final de 23 personas que lo validaron; para la sección de “Velocidad”, 9 votaron por excelente, 15 por  buena, teniendo como valor final 24 personas para validación. 
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.2]{Encuesta8.png}
 	\caption{Pregunta de opinión sobre la organizacion de la información } \textbf{Fuente:} Elaboración propia
@@ -292,6 +319,7 @@ Se planteó una pregunta en relación a la relación u organización entre texto
 \end{figure}
 
 Para el caso de la pregunta abierta, fue tipo sugerencias, mejoras o quejas que se tuviera sobre la aplicación, en donde se resaltó, que los colores de la aplicación está bien, pero tratar de hacer más llamativa la aplicación.
+
 
 \section{Conclusiones }
 \begin{itemize}
@@ -382,5 +410,32 @@ Para el caso de la pregunta abierta, fue tipo sugerencias, mejoras o quejas que 
 	\caption{Resultados segundo lote 36 psi}
 \label{R4}
 \end{table*}
+
+\begin{table*}[t]
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c |}
+	\toprule	
+		\multicolumn{6}{ |c| }{\textbf{ESPECIFICACIONES TELÉFONOS}} \\ \hline
+	 	 \textbf{RAM} & \textbf{ANDROID} & \textbf{PROCESADOR}  & \textbf{SIRVE}  & \textbf{FLUIDEZ} &   \textbf{CANT.}  \\
+	 	\midrule
+    	2 GB & 7.1.1 & Qualcomm Snapdragon 410 & No & -  & 1 \\
+    	3 GB & 10 & Octa Core Helio P 23 & Si & Baja & 3 \\
+    	2 GB & 7.0.1 & Qualcomm Snapdragon 617 & No & - & 1 \\
+    	4 GB & 11 & Qualcomm Snapdragon 662 & Si & Buena & 3 \\
+    	4 GB & 10.1 & Huawei Kirin 710 F & Si & Baja & 2\\
+    	4 GB & 9 & Octa core Max & Si & Buena  & 1\\
+    	8 GB & 12 & Octa core Max & Si & Buena & 2 \\
+    	5 GB & 11 & Qualcomm Snapdragon 680 & Si & Buena & 5\\
+    	4 GB & 12 & Octa-Core Max & Si & Buena & 3 \\
+    	1 GB & 5.1.1 & Quad-core  & No & -  & 1\\
+    	4 GB & 12 & Helio G35 Octa core  & No & - & 1 \\
+    	6 GB & 10 & Huawei Kirin 980 & Si & Buena & 1\\
+    	
+    \bottomrule
+    \end{tabular}
+	\caption{Datos teléfonos probados}
+	\label{TablaCEL}
+\end{table*}
+
 
 \end{document}
