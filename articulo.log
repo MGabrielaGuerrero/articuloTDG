@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2022.7.23)  27 DEC 2022 10:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2022.7.23)  11 JAN 2023 17:10
 entering extended mode
 **./articulo.tex
 (articulo.tex
@@ -167,6 +167,16 @@ Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@dima=\skip47
 \bigstrutjot=\dimen135
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen136
+\ar@mcellbox=\box29
+\extrarowheight=\dimen137
+\NC@list=\toks22
+\extratabsurround=\skip48
+\backup@length=\skip49
+\ar@cellbox=\box30
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
@@ -183,30 +193,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count109
 \Gm@cntv=\count110
 \c@Gm@tempcnt=\count111
-\Gm@bindingoffset=\dimen136
-\Gm@wd@mp=\dimen137
-\Gm@odd@mp=\dimen138
-\Gm@even@mp=\dimen139
-\Gm@layoutwidth=\dimen140
-\Gm@layoutheight=\dimen141
-\Gm@layouthoffset=\dimen142
-\Gm@layoutvoffset=\dimen143
-\Gm@dimlist=\toks22
+\Gm@bindingoffset=\dimen138
+\Gm@wd@mp=\dimen139
+\Gm@odd@mp=\dimen140
+\Gm@even@mp=\dimen141
+\Gm@layoutwidth=\dimen142
+\Gm@layoutheight=\dimen143
+\Gm@layouthoffset=\dimen144
+\Gm@layoutvoffset=\dimen145
+\Gm@dimlist=\toks23
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) (articulo.aux
-
-LaTeX Warning: Label `dispdia' multiply defined.
-
-
-LaTeX Warning: Label `diapro34' multiply defined.
-
-
-LaTeX Warning: Label `diapro36' multiply defined.
-
-
-LaTeX Warning: Label `dispvel' multiply defined.
-
-)
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg")) (articulo.aux)
 \openout1 = `articulo.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -221,19 +218,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
- ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count112
-\scratchdimen=\dimen144
-\scratchbox=\box29
+\scratchdimen=\dimen146
+\scratchbox=\box31
 \nofMPsegments=\count113
 \nofMParguments=\count114
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count115
-\MPscratchDim=\dimen145
+\MPscratchDim=\dimen147
 \MPnumerator=\count116
 \makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -409,172 +406,317 @@ Underfull \hbox (badness 1005) in paragraph at lines 141--142
 Underfull \vbox (badness 1331) has occurred while \output is active []
 
 
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 157--178
+Underfull \hbox (badness 10000) in paragraph at lines 161--161
+[]|\OT1/cmr/bx/n/12 Numero
+ []
+
+
+Overfull \hbox (0.51115pt too wide) in paragraph at lines 161--161
+[]|\OT1/cmr/bx/n/12 Velocidad
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+[]|\OT1/cmr/bx/n/12 Diametro
+ []
+
+
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
+ [5]
+Overfull \hbox (5.39497pt too wide) in paragraph at lines 190--211
 [][] 
  []
 
-
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
- [5]
-<dispDia.png, id=32, 648.021pt x 525.6438pt>
+<dispDia.png, id=32, 788.2248pt x 459.6372pt>
 File: dispDia.png Graphic file (type png)
 <use dispDia.png>
-Package pdftex.def Info: dispDia.png  used on input line 188.
-(pdftex.def)             Requested size: 226.81075pt x 183.97809pt.
-<Diapro34.png, id=33, 766.062pt x 523.2348pt>
-File: Diapro34.png Graphic file (type png)
-<use Diapro34.png>
-Package pdftex.def Info: Diapro34.png  used on input line 197.
-(pdftex.def)             Requested size: 229.82037pt x 156.97165pt.
-<Diapro36.png, id=34, 740.5266pt x 536.2434pt>
-File: Diapro36.png Graphic file (type png)
-<use Diapro36.png>
-Package pdftex.def Info: Diapro36.png  used on input line 204.
-(pdftex.def)             Requested size: 222.15968pt x 160.87425pt.
+Package pdftex.def Info: dispDia.png  used on input line 221.
+(pdftex.def)             Requested size: 236.46925pt x 137.89221pt.
+<Diapro34L1.png, id=33, 776.1798pt x 385.9218pt>
+File: Diapro34L1.png Graphic file (type png)
+<use Diapro34L1.png>
+Package pdftex.def Info: Diapro34L1.png  used on input line 229.
+(pdftex.def)             Requested size: 232.85573pt x 115.77742pt.
+<Diapro34L2.png, id=34, 776.6616pt x 418.6842pt>
+File: Diapro34L2.png Graphic file (type png)
+<use Diapro34L2.png>
+Package pdftex.def Info: Diapro34L2.png  used on input line 236.
+(pdftex.def)             Requested size: 233.00027pt x 125.60623pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Diapro36L1.png, id=35, 661.0296pt x 438.9198pt>
+File: Diapro36L1.png Graphic file (type png)
+<use Diapro36L1.png>
+Package pdftex.def Info: Diapro36L1.png  used on input line 243.
+(pdftex.def)             Requested size: 231.36382pt x 153.62422pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Diapro36L2.png, id=36, 722.2182pt x 429.7656pt>
+File: Diapro36L2.png Graphic file (type png)
+<use Diapro36L2.png>
+Package pdftex.def Info: Diapro36L2.png  used on input line 250.
+(pdftex.def)             Requested size: 252.78015pt x 150.42021pt.
+
+Overfull \hbox (15.93172pt too wide) in paragraph at lines 250--251
+ [][] 
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 2435) in paragraph at lines 209--210
+Underfull \hbox (badness 2435) in paragraph at lines 255--256
 \OT1/cmr/m/n/12 tuvo un valor mnimo es-table de 2,0966
  []
 
-[6 <./dispDia.png> <./Diapro34.png>]
-<trayectoria.png, id=40, 529.22719pt x 529.22719pt>
+[6 <./dispDia.png> <./Diapro34L1.png>]
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./Diapro34L2.png> <./Diapro36L1.png> <./Diapro36L2.png>]
+<trayectoria.png, id=49, 529.22719pt x 529.22719pt>
 File: trayectoria.png Graphic file (type png)
 <use trayectoria.png>
-Package pdftex.def Info: trayectoria.png  used on input line 213.
+Package pdftex.def Info: trayectoria.png  used on input line 259.
 (pdftex.def)             Requested size: 211.68712pt x 211.68712pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Dispvel.png, id=41, 738.5994pt x 523.2348pt>
+<Dispvel.png, id=50, 622.4856pt x 398.4486pt>
 File: Dispvel.png Graphic file (type png)
 <use Dispvel.png>
-Package pdftex.def Info: Dispvel.png  used on input line 221.
-(pdftex.def)             Requested size: 295.43452pt x 209.2902pt.
+Package pdftex.def Info: Dispvel.png  used on input line 267.
+(pdftex.def)             Requested size: 217.87321pt x 139.45909pt.
 
-Overfull \hbox (58.58609pt too wide) in paragraph at lines 221--222
- [][] 
+Underfull \hbox (badness 1960) in paragraph at lines 292--293
+\OT1/cmr/m/n/12 crtico de-ter-mi-nado por la dis-tribucion F
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 1852) in paragraph at lines 292--293
+\OT1/cmr/m/n/12 una variacion sig-ni-fica-tiva en el diametro
+ []
 
-[7 <./Diapro36.png> <./trayectoria.png> <./Dispvel.png>]
-Underfull \hbox (badness 1303) in paragraph at lines 236--237
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/cmr/bx/n/12 Origen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/cmr/bx/n/12 Sum.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+\OT1/cmr/bx/n/12 cuadra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/cmr/bx/n/12 Grad.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+[]|\OT1/cmr/bx/n/12 Prom.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--299
+\OT1/cmr/bx/n/12 cuadra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+[]|\OT1/cmr/bx/n/12 Valor
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 303--303
+[]|\OT1/cmr/m/n/12 Dentro de
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 305--305
+[]|\OT1/cmr/m/n/12 14569,91897| 
+ []
+
+<Diapro34.png, id=51, 766.062pt x 523.2348pt>
+File: Diapro34.png Graphic file (type png)
+<use Diapro34.png>
+Package pdftex.def Info: Diapro34.png  used on input line 315.
+(pdftex.def)             Requested size: 229.82037pt x 156.97165pt.
+[8 <./trayectoria.png> <./Dispvel.png> <./Diapro34.png>] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/cmr/bx/n/12 Origen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/cmr/bx/n/12 Sum.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+\OT1/cmr/bx/n/12 cuadra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/cmr/bx/n/12 Grad.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+[]|\OT1/cmr/bx/n/12 Prom.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--349
+\OT1/cmr/bx/n/12 cuadra-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+[]|\OT1/cmr/bx/n/12 Valor
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 353--353
+[]|\OT1/cmr/m/n/12 Dentro de
+ []
+
+
+Overfull \hbox (5.10774pt too wide) in paragraph at lines 355--355
+[]|\OT1/cmr/m/n/12 125,9142487| 
+ []
+
+<Diapro36.png, id=61, 740.5266pt x 536.2434pt>
+File: Diapro36.png Graphic file (type png)
+<use Diapro36.png>
+Package pdftex.def Info: Diapro36.png  used on input line 365.
+(pdftex.def)             Requested size: 222.15968pt x 160.87425pt.
+
+LaTeX Warning: Reference `TablaCEL' on page 10 undefined on input line 378.
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 380--381
 \OT1/cmr/m/n/12 sus dis-pos-i-tivos la apli-cacion fun-ciona de-
  []
 
-<Encuesta1.png, id=49, 1204.5pt x 506.6428pt>
+<Encuesta1.png, id=62, 1204.5pt x 506.6428pt>
 File: Encuesta1.png Graphic file (type png)
 <use Encuesta1.png>
-Package pdftex.def Info: Encuesta1.png  used on input line 244.
+Package pdftex.def Info: Encuesta1.png  used on input line 388.
 (pdftex.def)             Requested size: 240.89574pt x 101.32677pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 244--245
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 388--389
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Encuesta2.png, id=50, 1204.5pt x 572.89032pt>
+[10 <./Diapro36.png>]
+<Encuesta2.png, id=67, 1204.5pt x 572.89032pt>
 File: Encuesta2.png Graphic file (type png)
 <use Encuesta2.png>
-Package pdftex.def Info: Encuesta2.png  used on input line 254.
+Package pdftex.def Info: Encuesta2.png  used on input line 398.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 254--255
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 398--399
  [][] 
  []
 
-<Encuesta3.png, id=51, 1204.5pt x 572.89032pt>
+<Encuesta3.png, id=68, 1204.5pt x 572.89032pt>
 File: Encuesta3.png Graphic file (type png)
 <use Encuesta3.png>
-Package pdftex.def Info: Encuesta3.png  used on input line 264.
+Package pdftex.def Info: Encuesta3.png  used on input line 408.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 264--265
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 408--409
  [][] 
  []
 
-[8 <./Encuesta1.png> <./Encuesta2.png> <./Encuesta3.png>]
-<Encuesta4.png, id=55, 1204.5pt x 572.89032pt>
+<Encuesta4.png, id=69, 1204.5pt x 572.89032pt>
 File: Encuesta4.png Graphic file (type png)
 <use Encuesta4.png>
-Package pdftex.def Info: Encuesta4.png  used on input line 275.
+Package pdftex.def Info: Encuesta4.png  used on input line 419.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 275--276
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 419--420
  [][] 
  []
 
-<Encuesta5.png, id=56, 1204.5pt x 572.89032pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./Encuesta1.png> <./Encuesta2.png> <./Encuesta3.png>]
+<Encuesta5.png, id=73, 1204.5pt x 572.89032pt>
 File: Encuesta5.png Graphic file (type png)
 <use Encuesta5.png>
-Package pdftex.def Info: Encuesta5.png  used on input line 284.
+Package pdftex.def Info: Encuesta5.png  used on input line 428.
 (pdftex.def)             Requested size: 240.89574pt x 114.57603pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 284--285
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 428--429
  [][] 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 285--285
-[]\OT1/cmr/m/n/12 Figure 15: |Pre-gunta pro-porcion de in-for-
+Underfull \hbox (badness 1122) in paragraph at lines 429--429
+[]\OT1/cmr/m/n/12 Figure 19: |Pre-gunta pro-porcion de in-for-
  []
 
-<Encuesta6.png, id=57, 1204.5pt x 589.4522pt>
+<Encuesta6.png, id=74, 1204.5pt x 589.4522pt>
 File: Encuesta6.png Graphic file (type png)
 <use Encuesta6.png>
-Package pdftex.def Info: Encuesta6.png  used on input line 297.
+Package pdftex.def Info: Encuesta6.png  used on input line 441.
 (pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 297--298
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 441--442
  [][] 
  []
 
-[9 <./Encuesta4.png> <./Encuesta5.png> <./Encuesta6.png>]
-<Encuesta7.png, id=61, 1204.5pt x 589.4522pt>
+<Encuesta7.png, id=75, 1204.5pt x 589.4522pt>
 File: Encuesta7.png Graphic file (type png)
 <use Encuesta7.png>
-Package pdftex.def Info: Encuesta7.png  used on input line 306.
+Package pdftex.def Info: Encuesta7.png  used on input line 450.
 (pdftex.def)             Requested size: 240.89574pt x 117.88835pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 306--307
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 450--451
  [][] 
  []
 
-<Encuesta8.png, id=62, 1204.5pt x 628.59843pt>
+[12 <./Encuesta4.png> <./Encuesta5.png> <./Encuesta6.png> <./Encuesta7.png>]
+<Encuesta8.png, id=79, 1204.5pt x 628.59843pt>
 File: Encuesta8.png Graphic file (type png)
 <use Encuesta8.png>
-Package pdftex.def Info: Encuesta8.png  used on input line 315.
+Package pdftex.def Info: Encuesta8.png  used on input line 459.
 (pdftex.def)             Requested size: 240.89574pt x 125.71745pt.
 
-Overfull \hbox (4.0473pt too wide) in paragraph at lines 315--316
+Overfull \hbox (4.0473pt too wide) in paragraph at lines 459--460
  [][] 
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 325--326
+Underfull \hbox (badness 1057) in paragraph at lines 469--470
 \OT1/cmr/m/n/12 un \Lente Gran An-gu-lar" que re-al-iza
  []
 
-[10 <./Encuesta7.png> <./Encuesta8.png>] (articulo.bbl
+[13 <./Encuesta8.png>] (articulo.bbl
 Underfull \hbox (badness 1888) in paragraph at lines 25--28
 \OT1/cmr/m/n/12 flota-tion col-umn,'' \OT1/cmr/m/it/12 In-ter-na-tional Jour-
  []
 
-[11]
+
 Underfull \hbox (badness 1194) in paragraph at lines 86--89
 \OT1/cmr/m/it/12 ra-tion and Pu-rifi-ca-tion Tech-nol-ogy\OT1/cmr/m/n/12 , p.
  []
 
-
+[14]
 Underfull \hbox (badness 1400) in paragraph at lines 111--115
 []\OT1/cmr/m/n/12 B. In-vero, ``In-vero alu-minium
  []
@@ -619,108 +761,30 @@ Overfull \hbox (30.65712pt too wide) in paragraph at lines 132--135
 \OT1/cmr/m/n/12 https://consumer.huawei.com/mx/phones/p30-
  []
 
-) [12]
-File: dispDia.png Graphic file (type png)
-<use dispDia.png>
-Package pdftex.def Info: dispDia.png  used on input line 340.
-(pdftex.def)             Requested size: 388.8156pt x 315.38872pt.
+) [15
 
+] (articulo.aux)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: Diapro34.png Graphic file (type png)
-<use Diapro34.png>
-Package pdftex.def Info: Diapro34.png  used on input line 347.
-(pdftex.def)             Requested size: 459.64075pt x 313.9433pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: Diapro36.png Graphic file (type png)
-<use Diapro36.png>
-Package pdftex.def Info: Diapro36.png  used on input line 354.
-(pdftex.def)             Requested size: 444.31938pt x 321.74852pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-File: Dispvel.png Graphic file (type png)
-<use Dispvel.png>
-Package pdftex.def Info: Dispvel.png  used on input line 362.
-(pdftex.def)             Requested size: 443.16306pt x 313.9433pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 368--390
-[][] 
- []
-
-
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 395--416
-[][] 
- []
-
-
-Overfull \hbox (1.7949pt too wide) in paragraph at lines 421--441
-[][] 
- []
-
-[13
-
-]
-
-LaTeX Warning: Text page 14 contains only floats.
-
-
-Overfull \vbox (18.0627pt too high) has occurred while \output is active []
-
-
-
-LaTeX Warning: Text page 14 contains only floats.
-
-
-Overfull \vbox (18.0627pt too high) has occurred while \output is active []
-
-
-[14]
-
-LaTeX Warning: Text page 15 contains only floats.
-
-
-Overfull \vbox (24.4225pt too high) has occurred while \output is active []
-
-
-
-LaTeX Warning: Text page 15 contains only floats.
-
-
-Overfull \vbox (24.4225pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (4.42253pt too high) has occurred while \output is active []
-
-
-[15] [16] [17] (articulo.aux)
-
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4508 strings out of 492895
- 68710 string characters out of 3133479
- 163844 words of memory out of 3000000
- 8343 multiletter control sequences out of 15000+200000
+ 4584 strings out of 492895
+ 69751 string characters out of 3133479
+ 156718 words of memory out of 3000000
+ 8412 multiletter control sequences out of 15000+200000
  12750 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,39p,1917b,290s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,39p,1917b,284s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti12.pfb>
-Output written on articulo.pdf (17 pages, 1340638 bytes).
+Output written on articulo.pdf (15 pages, 1541491 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
